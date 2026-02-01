@@ -61,9 +61,9 @@ _А если всё-таки очень хочется получить дост
 
 Укажите в системе частный DNS:
 
-<img src="images/Pasted image 20250305220140.png" width="200">
+<img src="images/dns-01.png" width="200">
 
-<img src="images/Pasted image 20250305220209.png" width="200">
+<img src="images/dns-02.png" width="200">
 
 DNS over HTTPS можно найти [здесь](https://github.com/curl/curl/wiki/DNS-over-HTTPS) или [здесь](https://dnscrypt.info/public-servers/), однако нужно учитывать, что DoH не поддерживается на уровне системы Android.
 
