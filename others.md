@@ -220,7 +220,8 @@
 
 #### Keenetic
 
-- [nfqws-keenetic](https://github.com/Anonym-tsk/nfqws-keenetic) - есть инструкция для Keenetic / OpenWrt / Netcraze / Padavan
+- [nfqws-keenetic](https://github.com/Anonym-tsk/nfqws-keenetic) - сборка nfqws ориентированная на Keenetic. Есть инструкция для Keenetic / OpenWrt / Netcraze / Padavan
+- [nfqws2-keenetic](https://github.com/nfqws/nfqws2-keenetic) - сборка nfqws2 ориентированная на Keenetic. Есть инструкция для Keenetic / OpenWrt / Netcraze / Padavan
 - [B4](https://github.com/DanielLavrushin/b4) от DanielLavrushin
 - [youtubeUnblock](https://github.com/Waujito/youtubeUnblock?tab=readme-ov-file#entware) от Waujito
 - [zapret](https://github.com/AlexFBG/zapret)
