@@ -1,5 +1,7 @@
 Русский | [English](README.en.md)
 
+[![Donations Page](https://github.com/andry81-cache/gh-content-static-cache/raw/master/common/badges/donate/donate.svg)](https://pay.cloudtips.ru/p/92c754db)
+
 # ByeByeDPI от А до Я
 
 Данное руководство может ответить на многие вопросы о приложении ***ByeByeDPI***. Также в этом руководстве собраны все возможные варианты по обходу DPI на различных устройставах и системах.
