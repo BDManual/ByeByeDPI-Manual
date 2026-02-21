@@ -103,6 +103,10 @@
 
 - [NoDPI4Android](https://github.com/GVCoder09/NoDPI4Android) от GVCoder09
 
+#### RemoveDPI
+
+- [RemoveDPI](https://github.com/GameSketchers/RemoveDPI) от GameSketchers
+
 ### <a id="other-windows">На Windows</a>
 
 #### Сборки zapret
@@ -119,7 +123,9 @@
 
 - [zapret](https://github.com/bol-van/zapret) от bol-van
 - [ByeDPI](https://github.com/hufrea/byedpi) от hufrea (в теории версия [byedpi-x86-cygwin.zip](https://github.com/hufrea/byedpi/issues/219#issuecomment-2559707231) способна работать даже на Windows XP)
+- [dpibreak](https://github.com/dilluti0n/dpibreak) от dilluti0n
 - [NoDPI](https://github.com/GVCoder09/NoDPI) от GVCoder09
+- [DoloyRKN](https://github.com/Sksjdj367/DoloyRKN) от Sksjdj367
 
 #### Инструкции к оригинальным утилитам
 
@@ -140,6 +146,7 @@
 - [zapret-discord-youtube-linux](https://github.com/Sergeydigl3/zapret-discord-youtube-linux) от Sergeydigl3
 - [zapret4rocket](https://github.com/IndeecFOX/zapret4rocket) от IndeecFOX
 - [Byedpi-Setup](https://github.com/fatyzzz/Byedpi-Setup) от fatyzzz
+- [zapret-discord-youtube](https://github.com/kartavkun/zapret-discord-youtube) от kartavkun
 
 #### Оригинальные утилиты
 
@@ -165,9 +172,17 @@
 
 - [B4](https://github.com/DanielLavrushin/b4) от DanielLavrushin
 
+##### dpibreak
+
+- [dpibreak](https://github.com/dilluti0n/dpibreak) от dilluti0n
+
 ##### youtubeUnblock
 
 - [youtubeUnblock](https://github.com/Waujito/youtubeUnblock) от Waujito
+
+##### DoloyRKN
+
+- [DoloyRKN](https://github.com/Sksjdj367/DoloyRKN) от Sksjdj367
 
 ##### NoDPI
 
@@ -273,6 +288,7 @@
 > [!CAUTION]
 > Выполняйте инструкции на свой страх и риск!
 
+- [Darkware Zapret](https://github.com/roninreilly/darkware-zapret) от roninreilly. Содержит несколько стратегий для tpws и несколько стратегий для ByeDPI. Так как нет возможности использовать свои стратегии - очень ограниченный инструмент, но есть вероятность, что поможет.
 - [ByeDPI](https://github.com/hufrea/byedpi) от hufrea
 - [zapret](https://github.com/bol-van/zapret/blob/master/docs/bsd.md#macos) от bol-van
 - [NoDPI](https://github.com/GVCoder09/NoDPI) от GVCoder09
