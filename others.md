@@ -277,7 +277,7 @@
 - [zapret](https://github.com/bol-van/zapret) от bol-van
 - [zapret2](https://github.com/bol-van/zapret2/tree/master) от bol-van
 - [zapret в контейнере](https://github.com/vernette/ss-zapret) c Shadowsocks и SOCKS5 от vernette
-- [zapret2 в контейнере](https://github.com/vernette/ss-zapret2) c Shadowsocks и SOCKS5 от vernett
+- [zapret2 в контейнере](https://github.com/vernette/ss-zapret2) c Shadowsocks и SOCKS5 от vernette
 - [zapret4rocket](https://github.com/IndeecFOX/zapret4rocket) от IndeecFOX
 
 ### <a id="other-mac">На Mac</a>
