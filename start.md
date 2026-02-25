@@ -78,7 +78,7 @@ DNS over HTTPS можно найти [здесь](https://github.com/curl/curl/w
 
 - Прежде чем нажать кнопку **Подключить**, зайдите в **_основные настройки ByeByeDPI_** (шестерёнка справа, внизу экрана):
 
-  - <img src="images/point_to_settings.png" width="200">
+  - <img src="images/point_to_settings_1.png" width="200">
 
 - Активируйте переключатель «Использовать командную строку»
 
