@@ -28,14 +28,12 @@
 
 - YouTube ReVanced. [Revanced Manager](https://revanced.app/download) - приложение для удобного скачивания и обновления ReVanced и MicroG. [revanced.app](https://revanced.app/) - Официальный сайт ReVanced. Требуется Android 8.0+
 - [Morphe](https://morphe.software/) - альтернативный проект патчей ReVanced. От разработчиков, создавших модификации YouTube и YT Music. Требуется Android 9.0+
-- YouTube ReVanced Extended - если у вас проблемы с QUIC. Требуется Android 8.0+
 
 > [!TIP]
-> Для установки YouTube ReVanced, Morphe и YouTube ReVanced Extended рекомендуется патчить приложение самостоятельно:
+> Для установки YouTube ReVanced и Morphe рекомендуется патчить приложение самостоятельно:
 
 - [YouTube ReVanced Manager](https://github.com/ReVanced/revanced-manager)
 - [Morphe manager](https://github.com/MorpheApp/morphe-manager)
-- [RVX Manager](https://github.com/inotia00/revanced-manager)
 
 #### NewPipe и его вариации
 
@@ -122,7 +120,6 @@
 - [ByeDPI](https://github.com/hufrea/byedpi) от hufrea (в теории версия [byedpi-x86-cygwin.zip](https://github.com/hufrea/byedpi/issues/219#issuecomment-2559707231) способна работать даже на Windows XP)
 - [dpibreak](https://github.com/dilluti0n/dpibreak) от dilluti0n
 - [NoDPI](https://github.com/GVCoder09/NoDPI) от GVCoder09
-- [DoloyRKN](https://github.com/Sksjdj367/DoloyRKN) от Sksjdj367
 
 #### Инструкции к оригинальным утилитам
 
@@ -176,10 +173,6 @@
 ##### youtubeUnblock
 
 - [youtubeUnblock](https://github.com/Waujito/youtubeUnblock) от Waujito
-
-##### DoloyRKN
-
-- [DoloyRKN](https://github.com/Sksjdj367/DoloyRKN) от Sksjdj367
 
 ##### NoDPI
 
@@ -236,8 +229,6 @@
 - [nfqws2-keenetic](https://github.com/nfqws/nfqws2-keenetic) - сборка nfqws2 ориентированная на Keenetic. Есть инструкция для Keenetic / OpenWrt / Netcraze / Padavan
 - [B4](https://github.com/DanielLavrushin/b4) от DanielLavrushin
 - [youtubeUnblock](https://github.com/Waujito/youtubeUnblock?tab=readme-ov-file#entware) от Waujito
-- [zapret](https://github.com/AlexFBG/zapret)
-- [nfqws](https://habr.com/ru/articles/834826/) - программа из состава zapret. Инструкция для Keenetic
 
 #### MikroTik
 
