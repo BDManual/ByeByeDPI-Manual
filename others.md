@@ -223,7 +223,7 @@
 - [B4](https://github.com/DanielLavrushin/b4) от DanielLavrushin
 
 > [!TIP]
-> Можно использовать [пакет ByeDPI](https://github.com/DPITrickster/ByeDPI-OpenWrt) в качестве outbound'a в [podkop](https://github.com/itdoginfo/podkop), чтобы управлять трафиком через sign-box. Гайд можно прочитать [здесь](https://github.com/DPITrickster/Podkop-ByeDPI-OpenWRT)
+> Можно использовать [пакет ByeDPI](https://github.com/DPITrickster/ByeDPI-OpenWrt) в качестве outbound'a в [podkop](https://github.com/itdoginfo/podkop), чтобы управлять трафиком через sing-box. Гайд можно прочитать [здесь](https://github.com/DPITrickster/Podkop-ByeDPI-OpenWRT)
 
 #### Keenetic
 
