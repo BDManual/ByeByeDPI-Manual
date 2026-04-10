@@ -2,12 +2,12 @@
 
 # ByeByeDPI Manual
 
-The documentation has been fully moved to a website 👇  
-👉 https://bdmanual.github.io/ByeByeDPI-Manual/
+The documentation has been fully moved to a website:  
+https://bdmanual.github.io/ByeByeDPI-Manual/
 
 ---
 
-## 📖 About
+## About
 
 This guide covers common questions about **ByeByeDPI**.
 
@@ -15,7 +15,7 @@ All up-to-date instructions and strategies are now available on the website.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 > **Use this material at your own risk.**
 
@@ -30,7 +30,7 @@ Use them legally and only in networks where you have permission.
 
 ---
 
-## ℹ️ Note
+## Note
 
 DPI bypass is not a guaranteed or stable method.  
 It depends on your ISP, environment, and target resources.
@@ -42,5 +42,5 @@ You should:
 
 ---
 
-📌 Always use the latest documentation here:  
-👉 https://bdmanual.github.io/ByeByeDPI-Manual/
+Always use the latest documentation here:  
+https://bdmanual.github.io/ByeByeDPI-Manual/
