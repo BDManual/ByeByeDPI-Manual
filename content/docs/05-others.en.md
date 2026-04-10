@@ -1,5 +1,5 @@
 ---
-title: Other apps
+title: Other
 weight: 8
 ---
 

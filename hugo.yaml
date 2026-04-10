@@ -22,6 +22,7 @@ module:
 defaultContentLanguage: ru
 
 params:
+  externalLinkDecoration: true
   navbar:
     displayTitle: true
     displayLogo: true
@@ -37,6 +38,9 @@ params:
 
 menu:
   main:
+    - identifier: docs
+      pageRef: /docs
+      weight: 1
     - name: Поиск
       weight: 1
       params:
