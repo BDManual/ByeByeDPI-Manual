@@ -25,7 +25,7 @@ Built-in strategies automatically pick up SNI from settings. If you want your st
 -n {sni}
 ```
 
-Then [pass](03-docs/03-features/) the modified strategy to auto-selection.
+Then [pass](/docs/03-features/) the modified strategy to auto-selection.
 
 ### Replacing proxy lists {#replace-proxy-lists}
 
@@ -42,7 +42,7 @@ With a large list of domains, this option can be inconvenient. ByeByeDPI (from v
 > [!TIP]
 > This parameter works for both auto-selection and command line. If you apply such a strategy - it will be converted to one that byedpi can read before sending.
 
-To use it, you need to specify the ID (name, for example Cloudflare from built-in) of the domain/subnet list from [auto-selection settings](03-docs/03-features/). You can create your own list and specify its name. It should look like this:
+To use it, you need to specify the ID (name, for example Cloudflare from built-in) of the domain/subnet list from [auto-selection settings](/docs/03-features/). You can create your own list and specify its name. It should look like this:
 
 ```
 -H:"{list:Cloudflare}"
@@ -51,4 +51,4 @@ or
 ```
 -j:"{list:subnets}"
 ```
-The second will work ONLY if you have a subnet list named `subnets` in the [domain settings](03-docs/03-features/) section.
+The second will work ONLY if you have a subnet list named `subnets` in the [domain settings](/docs/03-features/) section.

@@ -51,10 +51,10 @@ Also try disabling [network acceleration](#simultaneously-wi-fi-mobile-web) in W
 
 ## An app or website doesn't work when ByeByeDPI is running {#something-is-not-working}
 
-If a specific app doesn't work, like Telegram - use [lists](03-docs/03-features/).
+If a specific app doesn't work, like Telegram - use [lists](/docs/03-features/).
 
-If some websites don't work, like `kremlin.ru` - use two browsers: add one to the [whitelist](03-docs/03-features/) (where ByeByeDPI will work), and don't add the other one (where ByeByeDPI won't work).
-If you don't like the two-browser option, use [per-site routing methods](03-docs/03-features/).
+If some websites don't work, like `kremlin.ru` - use two browsers: add one to the [whitelist](/docs/03-features/) (where ByeByeDPI will work), and don't add the other one (where ByeByeDPI won't work).
+If you don't like the two-browser option, use [per-site routing methods](/docs/03-features/).
 
 ## Doesn't work with SmartTube {#smarttube}
 
@@ -73,12 +73,12 @@ This error is related exclusively to SmartTube's operation. Users [complained](h
 Try clearing ByeByeDPI data, rebooting your phone.
 If that doesn't help: try clearing YouTube app data and updating the YouTube client to the latest version.
 If still not working - try performing [selection again](01-docs/01-start/).
-If the problem persists - add a browser to the [whitelist](03-docs/03-features/) and open YouTube there. If it works - the problem is with the YouTube client.
+If the problem persists - add a browser to the [whitelist](/docs/03-features/) and open YouTube there. If it works - the problem is with the YouTube client.
 
 ## Internet disappears on TV when ByeByeDPI starts {#internet-is-lost}
 
-Use the [whitelist](03-docs/03-features/) or [per-site routing](03-docs/03-features/). But first check that the TV box has internet at all (Wi-Fi or Ethernet cable connected).
-If Android version is higher than 9 - you can configure SmartTube and ByeByeDPI in [proxy mode](03-docs/03-features/).
+Use the [whitelist](/docs/03-features/) or [per-site routing](/docs/03-features/). But first check that the TV box has internet at all (Wi-Fi or Ethernet cable connected).
+If Android version is higher than 9 - you can configure SmartTube and ByeByeDPI in [proxy mode](/docs/03-features/).
 
 ## No audio in Discord {#ds-no-voice}
 
@@ -95,7 +95,7 @@ dis.gd
 discordcdn.com
 ```
 
-Instructions for selecting your own domains are [here](03-docs/03-features/).
+Instructions for selecting your own domains are [here](/docs/03-features/).
 In **selection settings** enable **extended log**:
 
 <img src="/images/image-14.png" width="200" alt="Extended log option">
@@ -127,7 +127,7 @@ Check in the selection settings the number of requests to the domain: should be 
 
    <img src="/images/image-5.png" width="200" alt="Start selection button">
 
-Try adding a browser to the [whitelist](03-docs/03-features/) and opening YouTube there. If it works - the problem is with the YouTube client.
+Try adding a browser to the [whitelist](/docs/03-features/) and opening YouTube there. If it works - the problem is with the YouTube client.
 Try using YouTube Revanced Extended with QUIC disabled:
 Settings → Extended → Other → disable quic.
 
@@ -162,7 +162,7 @@ If the SmartTube method didn't work for some reason:
 Address: 127.0.0.1  
 Port: 1080
 ```
-- Download `Firefox`, install the `ZeroOmega--Proxy SwitchyOmega V3` extension and follow [the instructions](03-docs/03-features/). To make watching YouTube more comfortable, you can download the `SponsorBlock` extension.
+- Download `Firefox`, install the `ZeroOmega--Proxy SwitchyOmega V3` extension and follow [the instructions](/docs/03-features/). To make watching YouTube more comfortable, you can download the `SponsorBlock` extension.
 
 ## Very low percentages (above zero) {#low-interest-rates}
 
@@ -230,7 +230,7 @@ If Android version is less than 6.0, nothing can be done about this error. If An
 
 ## No YouTube tiles on TV home screen {#no-tiles-on-tv}
 
-Try adding the Home app or another app responsible for the **home screen** to the [whitelist](03-docs/03-features/).
+Try adding the Home app or another app responsible for the **home screen** to the [whitelist](/docs/03-features/).
 
 ## DoT / DoH / DNS in IPv6 format doesn't work in ByeByeDPI {#only-dns-ipv4}
 
