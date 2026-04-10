@@ -1,4 +1,5 @@
 baseURL: /
+relativeURLs: true
 title: ByeByeDPI
 
 languages:
