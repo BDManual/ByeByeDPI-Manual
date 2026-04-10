@@ -41,7 +41,7 @@ weight: 8
 #### Идейные клиенты, которые выступают за приватность
 
 > [!WARNING]
-> Для работы данных приложений требуются инстансы. Они могут быть заблокированы иначе чем YouTube и требовать [разблокировки](features.md#разблокировать-свои-ресурсы) отдельно.
+> Для работы данных приложений требуются инстансы. Они могут быть заблокированы иначе чем YouTube и требовать [разблокировки](docs/03-features/#разблокировать-свои-ресурсы) отдельно.
 
 - [FreeTube Android](https://github.com/MarmadileManteater/FreeTubeAndroid) - клиент YouTube, использующий Invidious API для передачи данных и видео с YouTube. Требуется Android 7.0+
 - [LibreTube](https://github.com/libre-tube/LibreTube) - клиент, использующий [API Piped](https://github.com/TeamPiped/Piped) для отображения содержимого каналов и воспроизведения контента, не требует наличия учетной записи YouTube и сервисов Google.
@@ -74,7 +74,7 @@ weight: 8
 ## Другие варианты ускорения серверов
 
 > [!TIP]
-> ByeDPI или zapret? Если вы хотите, чтобы устройства внутри локальной сети могли подключаться к вашему компьютеру - используйте ByeDPI и читайте [инструкцию](features.md#distribute) по предоставлению доступа к ByeByeDPI - действия почти идентичные.
+> ByeDPI или zapret? Если вы хотите, чтобы устройства внутри локальной сети могли подключаться к вашему компьютеру - используйте ByeDPI и читайте [инструкцию](docs/03-features/#distribute) по предоставлению доступа к ByeByeDPI - действия почти идентичные.
 
 ### На Android
 
@@ -187,7 +187,7 @@ weight: 8
 
 ##### zapret
 
-- [Оригинальный zapret](https://github.com/bol-van/zapret/blob/master/docs/quick_start.md)
+- [Оригинальный zapret](https://github.com/bol-van/zapret/blob/master/docs/quick_docs/01-start/)
 - [zapret‐openwrt](https://github.com/remittor/zapret-openwrt) - пакеты zapret и zapret2 с интерфейсом от remittor
 - [Пакет zapret](https://github.com/spvkgn/zapret-openwrt) от spvkgn собранный под OpenWrt
 
@@ -238,7 +238,7 @@ weight: 8
 ##### byedpi
 
 - Можно подключаться к ByeDPI, который будет развёрнут на вашем ПК
-- [Можно подключаться](features.md#distribute) к телефону, на котором запущен ByeByeDPI
+- [Можно подключаться](docs/03-features/#distribute) к телефону, на котором запущен ByeByeDPI
 - [ByeDPI на одноплатном компьютере](https://habr.com/ru/articles/870254/)
 - [контейнер с ByeDPI](https://github.com/hufrea/byedpi/tree/main/dist/docker) (официальный)
 - [контейнер с ByeDPI](https://hub.docker.com/r/tazihad/byedpi) (неофициальный) от tazihad
@@ -415,7 +415,7 @@ rm ~/Library/LaunchAgents/com.user.ciadpi.plist
 Другие варианты для пользователей iOS:
 
 - Использовать VPN. Не требует особых навыков, усилий и знаний
-- Раздать доступ к ByeByeDPI с Android-устройства. Данный вариант подойдёт, если есть устройство на Android с настроенным ByeByeDPI. Подробная инструкция [здесь](features.md#раздача-интернета-с-byebyedpi-локальный-прокси)
+- Раздать доступ к ByeByeDPI с Android-устройства. Данный вариант подойдёт, если есть устройство на Android с настроенным ByeByeDPI. Подробная инструкция [здесь](docs/03-features/#раздача-интернета-с-byebyedpi-локальный-прокси)
 - Использовать решения по [обходу DPI на роутере](#other-router)
 - Использовать решения по [обходу DPI на домашнем сервере](#other-home-server) (в качестве сервера может выступать ПК)
 
