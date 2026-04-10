@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img[src="/logo.png"] {
+  filter: invert(1);
+}
+
+.dark img[src="/logo.png"] {
+  filter: none;
+}
+
+.main-cta-button {
+    background-color: #0A467E;
+    color: #ffffff;
+    transition: all .2s;
+}
+
+.main-cta-button:hover {
+  opacity: .7;
+}
+
+.hextra-card {
+    text-decoration: none;
+}

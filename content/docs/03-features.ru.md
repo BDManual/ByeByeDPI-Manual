@@ -1,23 +1,9 @@
+---
+title: Возможности
+weight: 3
+---
 
-1. [Белый и чёрный списки](#whitelist-blacklist)
-2. [Редактор командной строки](#editor)
-3. [Выводить все команды в тесте кликабельными](#clickable)
-4. [Свой список команд (стратегий)](#my-list)
-5. [Списки доменов для подбора](#domain-list)
-6. [Разблокировать свои ресурсы](#my-services)
-7. [Экспорт и импорт настроек](#export-import)
-8. [Способы запуска](#launch)
-9. [Режимы VPN и Proxy](#vpn-proxy)
-    - [Режим HTTP-proxy](#http-proxy)
-10. [Точечная маршрутизация сайтов (доменов)](#split-tunneling)
-11. [Раздача интернета с ByeByeDPI](#distribute)
-12. [Автоматизация](#automation)
-    - [Автоматическая смена стратегии при отключении/подключении Wi-Fi](#automatic-switching)
-    - [Автозапуск ByeByeDPI при запуске YouTube](#youtube-autostart)
-13. [Настройки для работы с AdGuard](#adguard)
-14. [Автообновление](#autoupdate)
-
-## <a id="whitelist-blacklist">Белый и чёрный списки</a>
+## Белый и чёрный списки
 
 _Белый_ список - выбранные приложения **будут работать** через ByeByeDPI, все остальные будут работать в обход ByeByeDPI.
 **Черный** список - выбранные приложения **НЕ будут работать** через ByeByeDPI, все остальные будут работать через ByeByeDPI.
@@ -27,13 +13,13 @@ _Белый_ список - выбранные приложения **будут
 > Плюсом ко всему, чем **меньше трафика** проходит через ByeByeDPI, тем **меньше** заряда батареи **тратится**.
 > На некоторых телевизорах (приставках) без настройки белого списка может **совсем не работать интернет**.
 
-## <a id="editor">Редактор командной строки</a>
+## Редактор командной строки
 
-<img src="images/cmd.png" width="200">
+<img src="/images/cmd.png" width="200">
 
 В разделе **Редактор командной строки** находится список **Аргументов командной строки** (стратегий), которые применялись ранее.
 
-<img src="images/list_strategies.png" width="200">
+<img src="/images/list_strategies.png" width="200">
 
 > [!WARNING]
 > Будьте внимательны: длина списка ограничена, если список переполнится - самые старые стратегии пропадут
@@ -48,19 +34,19 @@ _Белый_ список - выбранные приложения **будут
 
 Если **нажать** на стратегию - появится меню:
 
-<img src="images/list_menu.png" width="200">
+<img src="/images/list_menu.png" width="200">
 
 - Действие **Применить** - применит команду (сделает её текущим _Аргументом командной строки_)
 
-  - <img src="images/list_apply.png" width="200">
+   <img src="/images/list_apply.png" width="200">
 
 - Действие **Закрепить** - закрепит стратегию сверху списка
 
-  - <img src="images/strategy_pinned.png" width="200">
+   <img src="/images/strategy_pinned.png" width="200">
 
 - Действие **Переименовать** - позволяет дать имя стратегии или переименовать её
 
-  - <img src="images/strategy_rename.png" width="200">
+   <img src="/images/strategy_rename.png" width="200">
 
 - Действие **Редактировать** - редактирует стратегию на месте (без необходимости сохранять её как другую).    
 - Действие **Копировать** - скопирует стратегию в буфер обмена
@@ -72,7 +58,7 @@ _Белый_ список - выбранные приложения **будут
 
 При нажатии на кнопку `Вставить` - в поле вставится содержимое буфера обмена.
 
-## <a id="my-list">Свой список команд (стратегий)</a>
+## Свой список команд (стратегий)
 
 > [!IMPORTANT]
 > Использовать свой список стратегий нужно **только в случае**, если в результате автоподбора небольшой процент ответа от доменов. Если вы видите, что у стратегий одинаковый (невысокий) процент ответа - решение [тут](problems.md#у-команд-стратегий-одинаковый-невысокий-процент)
@@ -83,21 +69,21 @@ _Белый_ список - выбранные приложения **будут
 В таком случае: 
 - Перейдите в пункт **«Подбор команд (Beta)»**[^1]
 
-    - <img src="images/point_to_podbor.png" width="200">
+     <img src="/images/point_to_podbor.png" width="200">
 
 - Перейдите в **настройки Подбора** (шестерёнка справа сверху)
 
-  - <img src="images/proxytest_settings.png" width="200">
+   <img src="/images/proxytest_settings.png" width="200">
 
 - Активируйте переключатель **Свой список стратегий**
 
-  - <img src="images/setting_custom_strat.png" width="200">
+   <img src="/images/setting_custom_strat.png" width="200">
 
 - Нажмите на пункт **Список стратегий**
 
 - Откроется окно
 
-  - <img src="images/window_custom_strat.png" width="200">
+   <img src="/images/window_custom_strat.png" width="200">
 
 - В данное окно необходимо ввести свой список стратегий
 
@@ -106,23 +92,23 @@ _Белый_ список - выбранные приложения **будут
 
 - После ввода стратегий, нажмите **OK**
 
-  - <img src="images/custom_strat.png" width="200">
+   <img src="/images/custom_strat.png" width="200">
 
 - Вернитесь в пункт **Подбор стратегий (Beta)** и нажмите на кнопку «Начать проверку». После этого начнётся проверка стратегий, которые вы вставили в список
 
 - Дождитесь окончания проверки и действуйте дальше как при [стандартной настройке](start.md#настройка). Если подбор вылетает - решение [здесь](problems.md#вылетает-подбор).
 
-## <a id="domain-list">Списки доменов для подбора</a>
+## Списки доменов для подбора
 
 Перейдите в раздел меню: **Списки**.
 
-<img src="images/point_to_domains.png" width="200">
+<img src="/images/point_to_domains.png" width="200">
 
 В приложение вшиты несколько списков доменов для подбора стратегий.
 
-<img src="images/domain_list.png" width="200">
+<img src="/images/domain_list.png" width="200">
 
-<img src="images/domain_list_menu.png" width="200">
+<img src="/images/domain_list_menu.png" width="200">
 
 На данный момент в приложении реализованы несколько списков *(нажмите на каждый, чтобы открыть и посмотреть)*:
 <details>
@@ -256,7 +242,7 @@ yt3.googleusercontent.com
 Каждый отдельный список можно добавить в проверку стратегий, отметив его (квадратик справа от списка). 
 При нажатии на список открывается меню:
 
-<img src="images/domain_popup_menu.png" width="200">
+<img src="/images/domain_popup_menu.png" width="200">
 
 - **Редактировать** - редактировать список (добавить/убрать домены). Не рекомендуется делать с встроенными списками.
 - **Копировать** - скопировать список в буфер обмена.
@@ -264,7 +250,7 @@ yt3.googleusercontent.com
 
 Также к этим спискам можно добавить пользовательские. Для этого нажмите на строку сверху "Добавить список". Появится меню:
 
-<img src="images/domain_custom_menu.png" width="200">
+<img src="/images/domain_custom_menu.png" width="200">
 
 В строку `Название списка` введите название вашего списка.
 
@@ -279,15 +265,15 @@ yt3.googleusercontent.com
 
 Если вы хотите сами выяснить какие домены используются: в этой [статье](https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/) подробно рассказывается про сниффинг трафика на различных устройствах и системах.
 
-## <a id="my-services">Разблокировать свои ресурсы</a>
+## Разблокировать свои ресурсы
 
 Как уже было сказано, по умолчанию подбор стратегий проверяет стратегии на доменах ютуб и гуглвидео. Это можно изменить, чтобы проверять стратегии под ваши ресурсы:
 
 - Перейдите в **настройки подбора**.
 
-    - <img src="images/proxytest_settings.png" width="200">
+     <img src="/images/proxytest_settings.png" width="200">
     
-    - <img src="images/domain_list.png" width="200">
+     <img src="/images/domain_list.png" width="200">
     
 - Выберите необходимые списки. При необходимости добавьте пользовательские, как описано [тут](#domain-list).
 
@@ -296,30 +282,30 @@ yt3.googleusercontent.com
 > [!WARNING]
 > Если у всех стратегий 0% - скорее всего ресурс заблокирован по IP и ByeByeDPI здесь ничем не сможет помочь.
 
-## <a id="export-import">Экспорт и импорт настроек</a>
+## Экспорт и импорт настроек
 
 Чтобы экспортировать или импортировать настройки, зайдите в **_основные настройки ByeByeDPI_** (шестерёнка справа внизу):
 
-<img src="images/point_to_settings_1.png" width="200">
+<img src="/images/point_to_settings_1.png" width="200">
 
 - Нажмите на три точки в верхнем правом углу
 
-  - <img src="images/dots.png" width="200">
+   <img src="/images/dots.png" width="200">
 
 > [!WARNING]
 > С версии 1.4.2 используется другой формат файла. Настройки с более старых версий не получится импортировать.
 
 - Выберите экспорт/импорт в зависимости от того что вам нужно (экспорт или импорт). Все настройки экспортируются в файл в формате `json`. При импорте необходимо указать данный файл.
 
-  - <img src="images/export_import.png" width="200">
+   <img src="/images/export_import.png" width="200">
 
-## <a id="launch">Способы запуска</a>
+## Способы запуска
 
 ### Классический запуск
 
 Есть классический способ запуска: при помощи нажатия кнопки **Подключить**
 
-- <img src="images/address_me.png" width="200">
+ <img src="/images/address_me.png" width="200">
 
 > [!TIP]
 > Кому-то это может показаться неудобным, поэтому есть другие варианты.
@@ -328,26 +314,26 @@ yt3.googleusercontent.com
 
 - Зайдите в свою шторку и найдите пункт **Изменить** (или что-то вроде)
 
-  - <img src="images/bar_oneui.png" width="200">
-    <img src="images/bar_huawei.png" width="200">
+   <img src="/images/bar_oneui.png" width="200">
+    <img src="/images/bar_huawei.png" width="200">
 
 - После этого вы увидите неактивные элементы. Найдите среди них ByeByeDPI, зажмите и перетащите его к основным элементам.
 
-  - <img src="images/bar_01.png" width="200">
+   <img src="/images/bar_01.png" width="200">
 
 - Не забудьте сохранить изменения
 
-  - <img src="images/bar_02.png" width="200">
+   <img src="/images/bar_02.png" width="200">
 
 - Теперь вы можете запускать ByeByeDPI нажатием кнопки в шторке
 
-  - <img src="images/bar_03.png" width="200">
+   <img src="/images/bar_03.png" width="200">
 
 ### Контекстное меню
 
 Если зажать иконку ByeByeDPI появится контекстное меню через которое можно быстро включить и выключить приложение.
 
-<img src="images/context_menu.png" width="400">
+<img src="/images/context_menu.png" width="400">
 
 Также через контекстное меню можно запускать закреплённые стратегии. Они будут иметь имена, если вы дали им название (в примере выше закреплённая стратегия `main`). 
 ### Виджет
@@ -356,13 +342,13 @@ yt3.googleusercontent.com
 
 Некоторые лаунчеры позволяют сделать виджет из пунктов контекстного меню
 
-<img src="images/Pasted image 20250301142110.png" width="500">
+<img src="/images/Pasted image 20250301142110.png" width="500">
 
 Также если у вас есть закреплённые стратегии в командной строке, виджет можно сделать и из них, зажав пункт в контекстном меню и перетащив на главный экран. 
 
 Если ваш лаунчер не имеет такого функционала, воспользуйтесь приложением `QuickShortcutMaker`.
 
-## <a id="vpn-proxy">Режимы VPN и Proxy</a>
+## Режимы VPN и Proxy
 
 > [!CAUTION]
 > Использовать режим **Proxy** можно только в том случае, если вы подключаетесь при помощи прокси-клиента.
@@ -380,20 +366,20 @@ yt3.googleusercontent.com
 Прокси поднимается в любом режиме, но в режиме VPN клиентом данного прокси является ByeByeDPI
 Схематическое изображение работы VPN-режима (HevSocks5Tunnel и ByeByeDPI направляют трафик в интернет):
 
-<img src="images/Pasted image 20250227230752.png" width="500">
+<img src="/images/Pasted image 20250227230752.png" width="500">
 
 В режиме Proxy пользователю нужно самому подключить прокси-клиент к прокси для выхода в интернет:
 
-<img src="images/Pasted image 20250227231212.png" width="500">
+<img src="/images/Pasted image 20250227231212.png" width="500">
 
-### <a id="http-proxy">Режим HTTP-proxy</a>
+### Режим HTTP-proxy
 
 В данном режиме будет проксироваться HTTPS или любой TCP трафик, кроме HTTP.
 
 По умолчанию ByeByeDPI запускает локальный SOCKS-прокси, но некоторые прокси-клиенты не способны работать с таким протоколом. В таком случае можно активировать **режим HTTP-прокси**.
 Чтобы сделать это, необходимо активировать переключатель HTTP-прокси:
 
-<img src="images/Pasted image 20250501114346.png" width="500">
+<img src="/images/Pasted image 20250501114346.png" width="500">
 
 > [!NOTE]
 > Другой вариант активации данного режима - приписать к стратегии аргументы: `-G` или `--http-connect` (данные аргументы идентичны по смыслу).
@@ -401,7 +387,7 @@ yt3.googleusercontent.com
 > Пример такой стратегии:
 > `--http-connect -d1 -s0+s -d3+s -s6+s -d9+s -s12+s -d15+s -s20+s -d25+s -s30+s -d35+s -At,r,s -s1 -o1+s -s-1`
 
-## <a id="split-tunneling">Точечная маршрутизация сайтов (доменов)</a>
+## Точечная маршрутизация сайтов (доменов)
 
 > [!NOTE]
 > Подробнее про объединение стратегий и точечную маршрутизацию при помощи ByeDPI читайте в этом [обсуждении](https://github.com/BDManual/ByeByeDPI-Manual/discussions/36).
@@ -469,22 +455,22 @@ yt3.googleusercontent.com
 
 В таком случае ограничение по домену имеет только `-a3`, следующая группа будет работать по всем доменам.
 
-### <a id="extension">Расширение для браузера</a>
+### Расширение для браузера
 
 Другим вариантом может точечной маршрутизации будет использование прокси-расширения для браузера. В примере будет рассматриваться браузер `Firefox` с установленным расширением `ZeroOmega--Proxy SwitchyOmega V3`, но вы можете выбрать любое другое подобное расширение и любой другой браузер с поддержкой расширений.
 
 - Первым делом активируем в ByeByeDPI режим прокси или **убираем из белого списка браузер**, в который будем устанавливать расширение
 - Устанавливаем расширение и не забываем дать разрешение на работу в приватных окнах (это необходимо для работы прокси). Нажимаем кнопку **Добавить**
 
-  - <img src="images/Pasted image 20250302112919.png" width="200">
+   <img src="/images/Pasted image 20250302112919.png" width="200">
 
 - После этого откроем список расширений и нажмём на `ZeroOmega`
 
-  - <img src="images/Pasted image 20250302113220.png" width="200">
+   <img src="/images/Pasted image 20250302113220.png" width="200">
 
 - Перейдём во вкладку настроек
 
-  - <img src="images/Pasted image 20250302113330.png" width="200">
+   <img src="/images/Pasted image 20250302113330.png" width="200">
 
 - Во вкладке _Proxy_ настроим подключение: протокол (по умолчанию у ByeByeDPI SOCKS5), адрес и порт прокси (адрес и порт указаны в настройках ByeByeDPI). В моём случае:
 
@@ -496,7 +482,7 @@ Port: 1080
 
 - После настройки подключения не забываем применить изменения: нажать `Applay changes`
 
-  - <img src="images/Pasted image 20250302114111.png" width="200">
+   <img src="/images/Pasted image 20250302114111.png" width="200">
 
 - Перейдём во вкладку `auto switch`. И добавим _Switch rules_. Например, я добавил:
 
@@ -508,38 +494,38 @@ Profile: proxy
 
 - Не забываем сохранить изменения: нажимаем `Applay changes`
 
-  - <img src="images/Pasted image 20250302114225.png" width="200">
+   <img src="/images/Pasted image 20250302114225.png" width="200">
 
 - После этого пробуем зайти на нужный ресурс. Он **может не открыться** сразу. Необходимо изменить режим `ZeroOmega` на режим `auto switch`.
 
-  - <img src="images/Pasted image 20250302115737.png" width="200">
+   <img src="/images/Pasted image 20250302115737.png" width="200">
 
-  - <img src="images/Pasted image 20250302115814.png" width="200">
+   <img src="/images/Pasted image 20250302115814.png" width="200">
 
 - После этого нужно обновить страницу с вашим ресурсом. Или перейти по нужной ссылке: например, я открыл видео для просмотра. Но оно не начало воспроизводиться. Значит необходимо перейти в настройки расширения:
 
-  - <img src="images/Pasted image 20250302120058.png" width="200">
+   <img src="/images/Pasted image 20250302120058.png" width="200">
 
 - В режиме `auto switch` расширение сообщит, если какие-то домены не могут нормально работать:
 
-  - <img src="images/Pasted image 20250302120237.png" width="200">
+   <img src="/images/Pasted image 20250302120237.png" width="200">
 
 - Открываем вкладку _failed resources_, меняем их профиль на proxy и добавляем:
 
-  - <img src="images/Pasted image 20250302120454.png" width="200">
+   <img src="/images/Pasted image 20250302120454.png" width="200">
 
 - Обновляем страницу: теперь всё работает
 
-  - <img src="images/Pasted image 20250302120601.png" width="200">
+   <img src="/images/Pasted image 20250302120601.png" width="200">
 
 - В настройках это теперь выглядит как-то так:
 
-  - <img src="images/Pasted image 20250302120700.png" width="200">
+   <img src="/images/Pasted image 20250302120700.png" width="200">
 
 > [!IMPORTANT]
 > При отключенном ByeByeDPI домены, которые указаны для проксирования, не будут работать совсем. При отключении ByeByeDPI рекомендуется сменить режим `ZeroOmega` на _Direct_
 
-## <a id="distribute">Раздача интернета с ByeByeDPI (локальный прокси)</a>
+## Раздача интернета с ByeByeDPI (локальный прокси)
 
 Допустим у вас есть **iPhone** *(или другое устройство, на которое можно установить прокси-клиент)* и телефон с Android 6.0+ *(или другое устройство, на котором работает ByeByeDPI)*.
 На телефон установлен ByeByeDPI, подобрана рабочая стратегия. На **iPhone** *(или другом устройстве)* ставится прокси-клиент с поддержкой **SOCKS5** (например `Happ` подойдёт для iOS и Android).
@@ -551,15 +537,15 @@ Profile: proxy
 > [!CAUTION]
 > Если вы хотите, чтобы на устройстве, с работающим ByeByeDPI, продолжал работать YouTube (и не только), то не активируйте режим Proxy. Иначе вам придётся ставить прокси-клиент и на устройство с ByeByeDPI. Чтобы понимать, почему так происходит, и почему вы сможете подключаться с другого устройства даже при работе ByeByeDPI в режиме VPN - читайте [здесь](#vpn-proxy).
 
-<img src="images/Pasted image 20250426110346.png" width="200">
+<img src="/images/Pasted image 20250426110346.png" width="200">
 
-<img src="images/Pasted image 20250426110618.png" width="200">
+<img src="/images/Pasted image 20250426110618.png" width="200">
 
 Запускаем ByeByeDPI.
 
 После этого необходимо определить ip устройства в локальной сети, на котором запущен ByeByeDPI. Для этого используйте приложение [Android Network Tools](https://github.com/stealthcopter/AndroidNetworkTools). При заходе в это приложение будет написан IP-адрес:
 
-<img src="images/Pasted image 20250426111432.png" width="200">
+<img src="/images/Pasted image 20250426111432.png" width="200">
 
 IP устройства также можно узнать в настройках сети или при помощи приложения [Ning](https://github.com/csicar/Ning).
 
@@ -573,40 +559,40 @@ IP устройства также можно узнать в настройка
 
 Добавляем подключение:
 
-<img src="images/Pasted image 20250426113243.png" width="200">
+<img src="/images/Pasted image 20250426113243.png" width="200">
 
-<img src="images/Pasted image 20250426113328.png" width="200">
+<img src="/images/Pasted image 20250426113328.png" width="200">
 
 > [!IMPORTANT]
 > Протокол SOCKS5 или SOCKS
 
-<img src="images/Pasted image 20250426113410.png" width="200">
+<img src="/images/Pasted image 20250426113410.png" width="200">
 
 Вводим ip устройства, на котором работает ByeByeDPI (ip выясняли при помощи *Android Network Tools*) и порт, который указан в ByeByeDPI. После ввода не забываем сохранить изменения.
 
 > [!IMPORTANT]
 > У прокси-сервера, который поднимает ByeByeDPI нет ни логина, ни пароля - в прокси-клиентах оставляем поля пустыми.
 
-<img src="images/Pasted image 20250426113950.png" width="200">
+<img src="/images/Pasted image 20250426113950.png" width="200">
 
 Если у прокси-клиента есть возможность проверки соединения, сделайте это
 
-<img src="images/Pasted image 20250426114122.png" width="200">
+<img src="/images/Pasted image 20250426114122.png" width="200">
 
 > [!NOTE]
 > Если ответа нет, значит нет соединения: выключен ByeByeDPI, указаны неверные данные или устройства находятся в разных сетях.
 
 После этого укажем приложения, с которыми должен работать ByeByeDPI на **iPhone** *(или другом устройстве)*:
 
-<img src="images/Pasted image 20250426114538.png" width="200">
+<img src="/images/Pasted image 20250426114538.png" width="200">
 
-<img src="images/Pasted image 20250426114611.png" width="200">
+<img src="/images/Pasted image 20250426114611.png" width="200">
 
-<img src="images/Pasted image 20250426114752.png" width="200">
+<img src="/images/Pasted image 20250426114752.png" width="200">
 
 После этого можно запускать приложение и смотреть YouTube
 
-<img src="images/Pasted image 20250426114934.png" width="200">
+<img src="/images/Pasted image 20250426114934.png" width="200">
 
 Прокси-клиенты на различные устройства и систем:
 
@@ -615,7 +601,7 @@ IP устройства также можно узнать в настройка
 - на MacBook - FoXray, [V2RayXS](https://github.com/tzmax/V2RayXS) (для старых маков), [nekoray](https://github.com/Mahdi-zarei/nekoray).
 - на другое Android-устройство - `Happ`, [nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid), proxifier for Android, [SocksDroid](https://github.com/bndeff/socksdroid) (требуется Android 5.0+), [SocksTun](https://github.com/heiher/sockstun), для старых версий Андроид ProxyDroid (требуется рут).
 
-## <a id="automation">Автоматизация</a>
+## Автоматизация
 
 По умолчанию `ToggleActivity` поддерживает подключение/отключение ByeByeDPI.
 
@@ -631,13 +617,13 @@ IP устройства также можно узнать в настройка
 > [!TIP]
 > Это может быть полезно для автоматической смены стратегии при подключении к другой сети: например, переключение с Wi-Fi на мобильный интернет или переключение от одного сотового оператора к другому. Сценарии реализуются при помощи специальных приложений, например, при помощи `MacroDroid`.
 
-### <a id="automatic-switching">Автоматическая смена стратегии при отключении/подключении Wi-Fi</a>
+### Автоматическая смена стратегии при отключении/подключении Wi-Fi
 
 Нередки случаи, когда при подключении к Wi-Fi нужна одна стратегия, а при использовании мобильного интернета требуется другая стратегия. Ниже представлен скрипт для MacroDroid, который будет менять закреплённые стратегии в зависимости от состояния подключения к Wi-Fi.
 
 Чтобы воспользоваться скриптом, скачайте [файл](https://github.com/HideakiTaiki/ByeByeDPI-Manual/blob/main/automatic_switching.category) и импортируйте его в MacroDroid.
 
-### <a id="youtube-autostart">Автозапуск ByeByeDPI при запуске YouTube</a>
+### Автозапуск ByeByeDPI при запуске YouTube
 
 Встроенной функции запуска ByeByeDPI при запуске каких-либо приложений нет и не планируется, однако данный функционал возможно реализовать при помощи приложения `MacroDroid`.
 
@@ -647,29 +633,29 @@ IP устройства также можно узнать в настройка
 Активити запуска/остановки в ByeByeDPI - ToggleActivity.
 Выглядеть должно примерно так:
 
-<img src="images/Pasted image 20250302183357.png" width="400">
+<img src="/images/Pasted image 20250302183357.png" width="400">
 
 Можно также сделать условие: если VPN включен и YouTube закрыт, тоже вызываем ToggleActivity
 
-<img src="images/Pasted image 20250302183552.png" width="400">
+<img src="/images/Pasted image 20250302183552.png" width="400">
 
-## <a id="adguard">Настройки для работы с AdGuard</a>
+## Настройки для работы с AdGuard
 
 Переключаем ByeByeDPI в режим Proxy.
 
-<img src="images/Pasted image 20250302201223.png" width="200">
+<img src="/images/Pasted image 20250302201223.png" width="200">
 
 Добавьте ByeByeDPI в исключения AdGuard на вкладке "Управление приложениями":
 в самом AdGuard переходим в центральную вкладку, а после ищем ByeByeDPI, и просто обрубаем его фильтрацию.
 
-<img src="images/Pasted image 20250302200632.png" width="200">
+<img src="/images/Pasted image 20250302200632.png" width="200">
 
 После переходим в настройки -> фильтрация -> сеть -> прокси. Его врубаем, а после вводим те же значения прокси, которые указаны у вас в ByeByeDPI, обязательно в режиме SOCKS5.
 
-<img src="images/Pasted image 20250302201013.png" width="200">
-<img src="images/Pasted image 20250302201041.png" width="200">
-<img src="images/Pasted image 20250302201112.png" width="200">
-<img src="images/Pasted image 20250302201138.png" width="200">
+<img src="/images/Pasted image 20250302201013.png" width="200">
+<img src="/images/Pasted image 20250302201041.png" width="200">
+<img src="/images/Pasted image 20250302201112.png" width="200">
+<img src="/images/Pasted image 20250302201138.png" width="200">
 
 Ну и соответственно включаем работу прокси в AdGuard.
 
@@ -684,17 +670,17 @@ IP устройства также можно узнать в настройка
 
 
 
-## <a id="autoupdate">Автообновление</a>
+## Автообновление
 
 Приложение не реализует функционал автообновлений. Чтобы ByeByeDPI обновлялся автоматически, необходимо использовать [Obtainium](https://github.com/ImranR98/Obtainium).
 
 - Установите Obtainium
 - Нажмите на пункт "Добавить приложение"
-	- <img src="images/Pasted image 20250324070345.png" width="200">
+	 <img src="/images/Pasted image 20250324070345.png" width="200">
 - Добавьте репозиторий ByeByeDPI: `https://github.com/romanvht/ByeByeDPI/releases`
-	- <img src="images/Pasted image 20250324070448.png" width="200">
+	 <img src="/images/Pasted image 20250324070448.png" width="200">
 - Приложение добавлено
-	- <img src="images/Pasted image 20250324070610.png" width="200">
+	 <img src="/images/Pasted image 20250324070610.png" width="200">
 - Чтобы изменить параметры автообновления, необходимо изменить настройки Obtainium.
 
 ---

@@ -1,4 +1,9 @@
-## <a id="what-is-ByeByeDPI">Что такое ByeByeDPI?</a>
+---
+title: Начало
+weight: 2
+---
+
+## Что такое ByeByeDPI?
 
 > _**[ByeByeDPI](https://github.com/romanvht/ByeDPIAndroid?tab=readme-ov-file)**_ или сокращённо **bbd** - приложение для **Android**, которое локально запускает _[ByeDPI](https://github.com/hufrea/byedpi)_ и перенаправляет весь трафик через него.
 
@@ -6,13 +11,12 @@
 Приложение работает **только** на Android и Android TV, а также некоторых прошивках, основанных на Android.
 
 **Не существует** версии для iOS, TizenOS, WebOS, Windows, MacOS, Linux, FreeBSD и т.д.
-Если у вас система, не подходящая для установки ByeByeDPI, и вы по каким-то причинам не хотите использовать VPN или прокси - рассмотрите другие варианты в разделе [Другое](others.md#other-options) (в этом разделе также есть варианты установки zapret в качестве модулей Magisk).
 
 > [!IMPORTANT]
 > Приложение **не является VPN** - обойти региональные блокировки (например, получить доступ к ChatGPT) при помощи ByeByeDPI **нельзя**!
 > ByeByeDPI использует VPN-режим на Android для перенаправления трафика, но не передает информацию на удаленный сервер. Оно не шифрует трафик и не скрывает ваш IP-адрес.
 
-_А если всё-таки очень хочется получить доступ к ИИ-сервисам и некоторым другим ресурсам без VPN - читайте про [специальный DNS](others.md#proxy-dns)._
+_А если всё-таки очень хочется получить доступ к ИИ-сервисам и некоторым другим ресурсам без VPN - читайте про [специальный DNS](/docs/05-others/#проксирующие-dns)._
 
 Про механизмы блокировок более подробно можно узнать здесь:
 
@@ -22,7 +26,7 @@ _А если всё-таки очень хочется получить дост
 - [Evolving Censorship Evasion Strategies](https://geneva.cs.umd.edu/papers/geneva_ccs19.pdf)
 - [Censorship research publications](https://ntc.party/c/censorship-research-publications/22)
 
-## <a id="how-to-use-ByeByeDPI">Как пользоваться ByeByeDPI?</a>
+## Как пользоваться ByeByeDPI?
 
 Для начала, конечно, требуется скачать приложение. Приложение имеет стандартное расширение `apk`.
 
@@ -42,7 +46,7 @@ _А если всё-таки очень хочется получить дост
 
 Проверять и настраивать неофициальные клиенты необходимо только после того, как вы убедитесь, что официальное приложение YouTube работает. Это справедливо и для других приложений: например, **YouTube Music**.
 
-### <a id="before-setting">До настройки</a>
+### До настройки
 
 Всё чаще приходят жалобы на [перехват DNS](https://ru.wikipedia.org/wiki/DNS_hijacking). Чтобы определить, какой DNS-сервер вы используете, откройте этот [сайт](https://browserleaks.com/dns). Для обеспечения корректной работы ByeByeDPI авторы данного руководства рекомендуют настроить [DNS over TLS](https://ru.wikipedia.org/wiki/DNS_%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85_TLS) на уровне всей системы (стоит отметить, что такая возможность есть только на устройствах под управлением Android 9+).
 
@@ -61,66 +65,66 @@ _А если всё-таки очень хочется получить дост
 
 Укажите в системе частный DNS:
 
-<img src="images/dns-01.png" width="200">
+<img src="/images/dns-01.png" width="200">
 
-<img src="images/dns-02.png" width="200">
+<img src="/images/dns-02.png" width="200">
 
 DNS over HTTPS можно найти [здесь](https://github.com/curl/curl/wiki/DNS-over-HTTPS) или [здесь](https://dnscrypt.info/public-servers/), однако нужно учитывать, что DoH не поддерживается на уровне системы Android.
 
-### <a id="setting">Настройка</a>
+### Настройка
 
 Для эффективной работы ByeByeDPI требуется правильная настройка:
 > [!WARNING]
 > Выполнить настройку необходимо до конца, дабы избежать различных ошибок в пользовании приложением.
 - Разрешите показ уведомлений
 
-  - <img src="images/start_permission.png" width="200">
+   <img src="/images/start_permission.png" width="200">
 
 - Прежде чем нажать кнопку **Подключить**, зайдите в **_основные настройки ByeByeDPI_** (шестерёнка справа, внизу экрана):
 
-  - <img src="images/point_to_settings_1.png" width="200">
+   <img src="/images/point_to_settings_1.png" width="200">
 
 - Активируйте переключатель «Использовать командную строку»
 
-  - <img src="images/cmdline_under.png" width="200">
+   <img src="/images/cmdline_under.png" width="200">
 
 - В пункте **Фильтр приложений** выберите режим **белого списка** ([подробнее про списки](features.md#whitelist-blacklist))
 
-    - <img src="images/white_list.png" width="200">
+     <img src="/images/white_list.png" width="200">
     
 - В пункте **«Выбрать приложения»** отметьте **официальный клиент YouTube** и другие приложения, которые должны работать через ByeByeDPI
 
-    - <img src="images/you_tube.png" width="200">    
+     <img src="/images/you_tube.png" width="200">    
     
 - Выйдите из настроек и подключитесь, нажав на большую кнопку посередине экрана. Выдайте разрешение на поднятие VPN-соединения - это нужно для работы приложения.
   
-  - <img src="images/hs5t_permission.png" width="200">
+   <img src="/images/hs5t_permission.png" width="200">
 
 Основная настройка на этом этапе закончена. 
 
 Дальнейшая настройка будет полезна тем, у кого перестал работать необходимый сервис (YouTube, к примеру, так как дальнейшая настройка делается под него).
 
 - Перейдите в пункт «Подбор стратегий (Beta)»[^1]
-    - <img src="images/podbor.png" width="200">
+     <img src="/images/podbor.png" width="200">
 
 - Перейдите в **настройки подбора** (шестерёнка справа сверху)
 
-  - <img src="images/proxytest_settings.png" width="200">
+   <img src="/images/proxytest_settings.png" width="200">
 
 - Измените **Количество запросов к домену** на 5
 
-  - <img src="images/domain_number.png" width="200">
+   <img src="/images/domain_number.png" width="200">
 
 - Вернитесь в пункт **Подбор команд (Beta)** и нажмите на кнопку «Начать проверку»
 
 
 - Дождитесь окончания подбора. Об успешном окончании будет свидетельствовать строка ```Проверка завершена```. Стратегии сортируются по количеству ответивших доменов автоматически. Вылетает подбор - решение [здесь](problems.md#crash-proxy-test).
 
-  - <img src="images/proxytest_complete.png" width="200">
+   <img src="/images/proxytest_complete.png" width="200">
 
 - Нажмите на стратегию с наиболее частым ответом доменов[^2] (она будет в самом верху подбора), и выберите ```Применить и запустить``` в появившемся меню.
 
-  - <img src="images/apply_launch.png" width="200">
+   <img src="/images/apply_launch.png" width="200">
     
 > [!TIP]
 > Параметр рядом "Применить без запуска" означает, что стратегия будет применена, однако сам ByeByeDPI не запустится до момента, пока вы не сделаете этого сами.

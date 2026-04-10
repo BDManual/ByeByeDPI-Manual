@@ -1,17 +1,9 @@
-# Other
+---
+title: Other apps
+weight: 8
+---
 
-1. [Other DPI Bypass Options](#other-options)
-     - [Android](#other-android)
-     - [Windows](#other-windows)
-     - [Linux](#other-linux)
-     - [On Router](#other-router)
-     - [On a Home Server (always-on device)](#other-home-server)
-     - [macOS](#other-mac)
-     - [iOS](#other-iphone)
-2. [“Standard Editor” - Is It Necessary](#ui-editor)
-3. [Universal Strategy](#universal)
-
-## <a id="other-options">Other DPI Bypass Options</a>
+## Other DPI Bypass Options
 
 > [!CAUTION]
 > Use any of these solutions at your own risk. The authors of this manual are not responsible for any consequences or potential harm caused by using the software mentioned here.
@@ -19,7 +11,7 @@
 > [!TIP]
 > ByeDPI or zapret? If you want devices on your local network to connect to your computer, use ByeDPI and follow the [instructions](features.en.md#distribute) on how to grant access to ByeByeDPI — the steps are almost the same.
 
-### <a id="other-android">Android</a>
+### Android
 
 #### Magisk Modules for Android (root required)
 
@@ -27,7 +19,7 @@
 - [zapret-magisk](https://github.com/ImMALWARE/zapret-magisk) by ImMALWARE
 - [zaprett](https://github.com/egor-white/zaprett) by egor-white and the companion [zaprett-app](https://github.com/CherretGit/zaprett-app) by CherretGit
 
-### <a id="other-windows">Windows</a>
+### Windows
 
 #### zapret Builds
 
@@ -50,7 +42,7 @@
 - [zapret](https://github.com/bol-van/zapret-win-bundle?tab=readme-ov-file#quick-start)
 - [ByeDPI](byedpi-guide-windows.en.md)
 
-### <a id="other-linux">Linux</a>
+### Linux
 
 ##### Scripts for Automatic Installation
 
@@ -79,7 +71,7 @@
 - [zapret](https://github.com/bol-van/zapret/blob/master/docs/readme.en.md#desktop-linux-system)
 - [ByeDPI](https://github.com/hufrea/byedpi/tree/main/dist/linux)
 
-### <a id="other-router">On Router</a>
+### On Router
 
 #### OpenWrt
 
@@ -103,7 +95,7 @@
 - [ByeDPI article with instructions](https://habr.com/ru/articles/838452/)
 - [Containers](https://hub.docker.com/u/wiktorbgu) with tpws from zapret and ByeDPI (note: tpws does not support UDP)
 
-### <a id="other-home-server">On a Home Server (always-on device)</a>
+### On a Home Server (always-on device)
 
 - You can connect to ByeDPI deployed on your PC
 - [Can connect](features.en.md#distribute) to a phone running ByeByeDPI
@@ -115,7 +107,7 @@
 - [ByeDPI container](https://hub.docker.com/r/tazihad/byedpi) (unofficial)
 - [ByeDPI on Synology](https://bafista.ru/ustanovka-byedpi-v-kontejner-docker-na-synology/) or [ByeDPI on TerraMaster](https://bafista.ru/ustanovka-byedpi-v-kontejner-docker-na-terramaster/)
 
-### <a id="other-mac">Mac</a>
+### Mac
 
 > [!CAUTION]
 > Follow the instructions at your own risk!
@@ -266,7 +258,7 @@ launchctl unload ~/Library/LaunchAgents/com.user.ciadpi.plist
 rm ~/Library/LaunchAgents/com.user.ciadpi.plist
 ```
 
-## <a id="other-iphone">iOS</a>
+## iOS
 
 On iOS, there is [Rumble](https://iklassika.ru/app.php?id=5833) — apparently, it is byedpi + hev-socks5-tunnel. The source code is available [here](https://github.com/RumbleOrg/Rumble). This application can only be installed if you have a developer certificate.
 
@@ -285,7 +277,7 @@ On iOS, there is [Rumble](https://iklassika.ru/app.php?id=5833) — apparently, 
 > [!NOTE]
 > If your ISP provides a static (white) IP, you can set up a VPN tunnel to your router and access the internet from your phone through the bypass-enabled network.
 
-## <a id="ui-editor">“Standard Editor” - Is It Necessary</a>
+## “Standard Editor” - Is It Necessary
 
 Creating a custom strategy (which is what the graphical editor is for) requires a solid understanding of how networks work and how each setting affects DPI bypass.  
 This is all thoroughly explained in the [official documentation](https://github.com/hufrea/byedpi).
@@ -294,6 +286,6 @@ Anyone who has read and understood the documentation will not need the graphical
 
 The “standard editor” is **not recommended**. Random guessing is a bad approach.
 
-## <a id="universal">Universal Strategy</a>
+## Universal Strategy
 
 If you're struggling to get things working, just use a VPN.
