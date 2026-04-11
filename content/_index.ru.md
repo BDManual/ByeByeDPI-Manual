@@ -3,7 +3,7 @@ layout: hextra-home
 ---
 
 <section class="hx:w-full hx:mt-6 hx:mb-6 hx:text-center">
-  <h1 class="hx:text-4xl sm:hx:text-4xl md:hx:text-5xl hx:font-extrabold hx:mb-8 hx:flex hx:items-center hx:justify-center hx:gap-2">
+  <h1 class="app-name hx:text-4xl sm:hx:text-4xl md:hx:text-5xl hx:font-extrabold hx:mb-8 hx:flex hx:items-center hx:justify-center hx:gap-2">
       ByeByeDPI
   </h1>
   <p class="hx:text-lg hx:text-muted-foreground hx:mb-4">

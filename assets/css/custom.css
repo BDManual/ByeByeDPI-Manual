@@ -37,6 +37,42 @@ html.dark aside {
   border-right: 1px solid #1A3A55;
 }
 
+/* title main */
+.app-name {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.7em;
+}
+
+.app-name::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #2281D4;
+  border-left: 3px solid #2281D4;
+  border-radius: 3px 0 0 0;
+}
+
+.app-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  border-bottom: 3px solid #2281D4;
+  border-right: 3px solid #2281D4;
+  border-radius: 0 0 3px 0;
+}
+
+html:not(.dark) .app-name::before,
+html:not(.dark) .app-name::after {
+  border-color: #0A467E;
+}
+
 /* cards main */
 html:not(.dark) .hextra-card {
   text-decoration: none;
