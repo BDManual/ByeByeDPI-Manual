@@ -4,24 +4,102 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-img[src="/logo.png"] {
-  filter: invert(1);
+html:not(.dark) {
+  --hx-color-neutral-200: #C8DFEF;
+  --hx-color-neutral-800: #102438;
 }
 
-.dark img[src="/logo.png"] {
-  filter: none;
+html.dark {
+  --hx-color-neutral-400: #C8DFEF;
+  --hx-color-neutral-800: #102438;
+  --hx-color-neutral-900: #102438;
 }
 
+html:not(.dark) body {
+  background-color: #E8F1FA;
+}
+
+/* header */
+html:not(.dark) .hextra-nav-container {
+  background-color: #0A467E;
+}
+
+html.dark body {
+  background-color: #0D1E2E;
+}
+
+html.dark .hextra-nav-container {
+  background-color: #083762;
+}
+
+html.dark aside {
+  background-color: #102438;
+  border-right: 1px solid #1A3A55;
+}
+
+/* cards main */
+html:not(.dark) .hextra-card {
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #C8DFEF;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+html:not(.dark) .hextra-card:hover {
+  background-color: #E8F1FA;
+  box-shadow: 0 2px 12px rgba(10, 70, 126, 0.1);
+}
+
+html.dark .hextra-card {
+  text-decoration: none;
+  background-color: #142D45;
+  border: 1px solid #1A3A55;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+html.dark .hextra-card:hover {
+  background-color: #1A3A55;
+  box-shadow: 0 2px 16px rgba(10, 70, 126, 0.25);
+}
+
+/* sidebar normalize */
+html:not(.dark) .hextra-toc div {
+  background: none;
+  box-shadow: none;
+}
+
+html:not(.dark) .hextra-sidebar-container div {
+  background: none;
+  box-shadow: none;
+}
+
+html.dark .hextra-toc div {
+  background: none;
+  box-shadow: none;
+}
+
+html.dark .hextra-sidebar-container div {
+  background: none;
+  box-shadow: none;
+}
+
+/* other */
 .main-cta-button {
-    background-color: #0A467E;
-    color: #ffffff;
-    transition: all .2s;
+  background-color: #1A6DB8;
+  color: #ffffff;
+  transition: all .2s;
 }
 
 .main-cta-button:hover {
-  opacity: .7;
+  opacity: .8;
+}
+
+html.dark .main-cta-button {
+  background-color: #2281D4;
 }
 
 .hextra-card {
-    text-decoration: none;
+  text-decoration: none;
 }

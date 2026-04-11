@@ -28,6 +28,7 @@ params:
     displayLogo: true
     logo:
       path: logo.png
+      dark: logo-dark.png
       width: 32
       height: 32
   theme:

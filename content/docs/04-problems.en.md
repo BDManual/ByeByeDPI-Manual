@@ -257,7 +257,3 @@ Check that the strategy is written correctly. If you can't - use a different str
 Check if YouTube works in the browser, after adding the browser to the whitelist first. If it works - install the latest version of the official [YouTube](https://www.apkmirror.com/apk/google-inc/youtube-for-android-tv-android-tv/) client.
 
 If the problem persists - there's a chance that special [configuration](sbox.md) of the TV is required.
-
----
-
-[^1]: Problems may be due to features of the network stack of outdated Android and specific device firmware.

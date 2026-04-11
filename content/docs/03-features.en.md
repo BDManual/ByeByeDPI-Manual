@@ -534,6 +534,4 @@ The application does not implement an auto-update feature. To enable automatic u
 	 <img src="/images/Pasted image 20250324070610.png" width="200">
 - To change the auto-update settings, you must change the Obtainium settings.
 
----
-
 [^1]: Team selection is in development. There may be errors. **Strategies are not generated automatically** - they are always the same. In the current implementation, the selection does not actually select anything - it just checks the performance of a set of strategies that have been added to it by the developer.
