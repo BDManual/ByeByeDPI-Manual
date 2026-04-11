@@ -3,7 +3,7 @@
 # ByeByeDPI Manual
 
 Документация полностью перенесена в формат сайта:  
-https://bdmanual.github.io/ByeByeDPI-Manual/
+https://byebyedpi.xyz
 
 ---
 
@@ -43,4 +43,4 @@ https://bdmanual.github.io/ByeByeDPI-Manual/
 ---
 
 Актуальная версия документации всегда здесь:  
-https://bdmanual.github.io/ByeByeDPI-Manual/
+https://byebyedpi.xyz

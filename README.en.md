@@ -3,7 +3,7 @@
 # ByeByeDPI Manual
 
 The documentation has been fully moved to a website:  
-https://bdmanual.github.io/ByeByeDPI-Manual/
+https://byebyedpi.xyz
 
 ---
 
@@ -43,4 +43,4 @@ You should:
 ---
 
 Always use the latest documentation here:  
-https://bdmanual.github.io/ByeByeDPI-Manual/
+https://byebyedpi.xyz
