@@ -228,10 +228,11 @@ weight: 8
 - [контейнер с ByeDPI с автоподбором стратегий](https://hub.docker.com/r/vindibona/byedpi-orchestrator) от vindibona
 
 > [!WARNING]
-> Необходимая [информация](https://gist.github.com/wiktorbgu/b27828bc789d9e751c18503d0ee86675) о запуске nfqws1 и nfqws2 на MikroTik
+> Необходимая [информация](https://gist.github.com/wiktorbgu/b27828bc789d9e751c18503d0ee86675) о запуске nfqws1, nfqws2 и b4 на MikroTik
 
 - [Контейнер с nfqws1 из zapret1](https://hub.docker.com/r/wiktorbgu/nfqws-mikrotik) от wiktorbgu
 - [Контейнер с nfqws2 из zapret2](https://hub.docker.com/r/wiktorbgu/nfqws2-mikrotik) от wiktorbgu
+- [Контейнер с b4](https://hub.docker.com/r/wiktorbgu/b4-mikrotik) от wiktorbgu
 
 ### На домашнем сервере (постоянно включенном устройстве)
 
