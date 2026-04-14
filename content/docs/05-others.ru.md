@@ -46,6 +46,7 @@ weight: 8
 - [FreeTube Android](https://github.com/MarmadileManteater/FreeTubeAndroid) - клиент YouTube, использующий Invidious API для передачи данных и видео с YouTube. Требуется Android 7.0+
 - [LibreTube](https://github.com/libre-tube/LibreTube) - клиент, использующий [API Piped](https://github.com/TeamPiped/Piped) для отображения содержимого каналов и воспроизведения контента, не требует наличия учетной записи YouTube и сервисов Google.
 - [Mini YouTube](https://github.com/monobogdan/selfeco) - клиент YouTube из состава приложений SelfEco. Использует Invidous API. **Требуется Android 2.2+**. Также существует [форк](https://github.com/tinelix/selfeco-plus), с заявленной поддержкой HTTP-прокси для YouTube, однако собирать приложение нужно самостоятельно.
+- [notPipe](https://github.com/gohoski/notPipe) - рабочий клиент YouTube для **Android 1.5+**, использующий API [Invidious](https://invidious.io), [yt2009](https://github.com/ftde0/yt2009) и [YtAPILegacy](http://yt.modyleprojects.ru). Приложение использует множество инстансов для надёжности.
 
 #### Ещё варианты
 
