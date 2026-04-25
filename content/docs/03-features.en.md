@@ -534,16 +534,14 @@ The application does not implement an auto-update feature. To enable automatic u
 	 <img src="/images/Pasted image 20250324070610.png" width="200">
 - To change the auto-update settings, you must change the Obtainium settings.
 
-## Toggle `IPv6`
+### `IPv6` Toggle
+This toggle forces ByeByeDPI to resolve only IPv6 addresses. Before enabling it, ensure that your ISP supports IPv6 and that the websites you want to access have an IPv6 address.
 
-This toggle force ByeByeDPI search only IPv6 address (if you want enable this toggle, make sure that you ISP support IPv6 and needed you sites have a IPv6 address).
+### Using Files in Strategies
+To use files within a strategy, you must grant the app permission to access storage (**ByeByeDPI** — **Settings** — **File Access**).
 
-## Using files in strategy
+Once permissions are granted, you can specify a file path for arguments that support the `file` parameter (refer to the [ByeDPI documentation](https://github.com/hurfea/byedpi) for details).
 
-For use files in strategy need give ByeByeDPI access for work with files (ByeByeDPI — Settings — Storage access)
-
-After you can paste path in arguments with support file (about support file in [ByeDPI documentation](https://github.com/hurfea/byedpi)) путь к файлу
-
-Strategy example: `-f512 -t7 -l:'/storage/emulated/0/Download/g.bin'`. (You can find path to file in apps like Cx Explorer.)
+**Example strategy:** `-f512 -t7 -l:'/storage/emulated/0/Download/g.bin'`. (You can find the exact file path using apps like Cx File Explorer.)
 
 [^1]: Team selection is in development. There may be errors. **Strategies are not generated automatically** - they are always the same. In the current implementation, the selection does not actually select anything - it just checks the performance of a set of strategies that have been added to it by the developer.
