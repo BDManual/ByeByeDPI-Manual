@@ -544,7 +544,7 @@ This toggle forces ByeByeDPI to connect only by IPv6 address. Before enabling it
 ### Using Files in Strategies
 To use files within a strategy, you must grant the app permission to access storage (**ByeByeDPI** — **Settings** — **File Access**).
 
-Once permission is granted, you can specify a file path for arguments that support the `file` parameter (refer to the [ByeDPI documentation](https://github.com/hurfea/byedpi) for details).
+Once permission is granted, you can specify a file path for arguments that support the `file` parameter (refer to the [ByeDPI documentation](https://github.com/hufrea/byedpi) for details).
 
 **Example strategy:** `-f512 -t7 -l:'/storage/emulated/0/Download/g.bin'`. (You can find the exact file path using apps like Cx File Explorer.)
 
