@@ -535,12 +535,16 @@ The application does not implement an auto-update feature. To enable automatic u
 - To change the auto-update settings, you must change the Obtainium settings.
 
 ### `IPv6` Toggle
-This toggle forces ByeByeDPI to resolve only IPv6 addresses. Before enabling it, ensure that your ISP supports IPv6 and that the websites you want to access have an IPv6 address.
+
+> [!CAUTION]
+> It is recommeded to keep this setting off by default. Enabling it may disrupt your internet connection.
+
+This toggle forces ByeByeDPI to connect only by IPv6 address. Before enabling it, ensure that your ISP supports IPv6 (some sites like 2ip.io can help with that) and that the websites you want to access have an IPv6 address.
 
 ### Using Files in Strategies
 To use files within a strategy, you must grant the app permission to access storage (**ByeByeDPI** — **Settings** — **File Access**).
 
-Once permissions are granted, you can specify a file path for arguments that support the `file` parameter (refer to the [ByeDPI documentation](https://github.com/hurfea/byedpi) for details).
+Once permission is granted, you can specify a file path for arguments that support the `file` parameter (refer to the [ByeDPI documentation](https://github.com/hurfea/byedpi) for details).
 
 **Example strategy:** `-f512 -t7 -l:'/storage/emulated/0/Download/g.bin'`. (You can find the exact file path using apps like Cx File Explorer.)
 
