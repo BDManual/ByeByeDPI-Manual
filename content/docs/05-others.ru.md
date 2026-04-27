@@ -9,7 +9,7 @@ weight: 8
 
 #### Для телевизоров и приставок
 
-- [YouTube for Androuid TV](https://play.google.com/store/apps/details?id=com.google.android.youtube.tv) - официальное приложение YouTube для управления пультом. Требуется Android 7.0+
+- [YouTube for Android TV](https://play.google.com/store/apps/details?id=com.google.android.youtube.tv) - официальное приложение YouTube для управления пультом. Требуется Android 7.0+
 - [SmartTube](https://github.com/yuliskov/SmartTube) - единственный клиент с поддержкой прокси. Требуется Android 4.3+
 - [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt) - улучшает качество просмотра YouTube за счет удаления рекламы и спонсорских вставок. Требуется Android 7.0+
 
