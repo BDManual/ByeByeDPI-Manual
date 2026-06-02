@@ -521,6 +521,31 @@ For more domain lists, check this [repository](https://github.com/v2fly/domain-l
 To identify domains used by a service, you can follow this [guide](https://itdog.info/analiziruem-trafik-i-opredelyaem-domeny-kotorye-ispolzuyut-sajty-i-prilozheniya/)(couldn't find one in English. If you know something, write in the issue) goes into detail about sniffing traffic on various devices and systems.
 For Android, I recommend using **PCAPdroid**. For PC, you can use the browser's developer tools to inspect network traffic.
 
+## Automation
+
+`ToggleActivity` allows you to control ByeByeDPI from external automation apps such as MacroDroid.
+
+The following parameters are supported:
+
+| Parameter     | Action                                                                                    | Type   |
+| ------------- | ----------------------------------------------------------------------------------------- | ------ |
+| `strategy`    | Update the strategy. If the service is running, it will be restarted to apply the changes | String |
+| `only_update` | Update the launch arguments without changing the service state                            | Bool   |
+| `only_start`  | Start the service if it is not running                                                    | Bool   |
+| `only_stop`   | Stop the service if it is running                                                         | Bool   |
+
+If none of the `only_update`, `only_start`, or `only_stop` parameters are specified, the activity acts as an on/off toggle.
+
+> [!TIP]
+> This can be useful for automatically switching between different parameter sets when changing networks, for example when switching from Wi-Fi to mobile data or between different mobile carriers.
+
+### Automatically Switching Strategies When Connecting to or Disconnecting from Wi-Fi
+
+In many cases, one strategy works best when connected to Wi-Fi, while a different strategy is required when using mobile data. Below is a MacroDroid script that automatically switches between pinned strategies based on the current Wi-Fi connection state.
+
+To use the script, download the file below and import it into MacroDroid:
+https://github.com/BDManual/ByeByeDPI-Manual/blob/main/automatic_switching.category
+
 ## Auto-update
 
 The application does not implement an auto-update feature. To enable automatic updates for ByeByeDPI, use [Obtainium](https://github.com/ImranR98/Obtainium).
