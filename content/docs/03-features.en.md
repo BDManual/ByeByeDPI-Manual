@@ -534,7 +534,7 @@ The following parameters are supported:
 | `only_start`  | Start the service if it is not running                                                    | Bool   |
 | `only_stop`   | Stop the service if it is running                                                         | Bool   |
 
-If none of the `only_update`, `only_start`, or `only_stop` parameters are specified, the activity acts as an on/off toggle.
+If none of the parameters are specified, the activity acts as an on/off toggle.
 
 > [!TIP]
 > This can be useful for automatically switching between different parameter sets when changing networks, for example when switching from Wi-Fi to mobile data or between different mobile carriers.
