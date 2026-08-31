@@ -1,15 +1,13 @@
 ---
-title: Other
-weight: 8
+title: Alternatives
+weight: 12
 ---
-
-## Other DPI Bypass Options
 
 > [!CAUTION]
 > Use any of these solutions at your own risk. The authors of this manual are not responsible for any consequences or potential harm caused by using the software mentioned here.
 
 > [!TIP]
-> ByeDPI or zapret? If you want devices on your local network to connect to your computer, use ByeDPI and follow the [instructions](features.en.md#distribute) on how to grant access to ByeByeDPI — the steps are almost the same.
+> ByeDPI or zapret? If you want devices on your local network to connect to your computer, use ByeDPI and follow the [instructions](/en/docs/routing/#distribute) on how to grant access to ByeByeDPI — the steps are almost the same.
 
 ### Android
 
@@ -40,7 +38,7 @@ weight: 8
 > ByeDPI does not include automatic strategy selection — you need to find a working strategy yourself (for example, by searching in [ByeByeDPI](https://github.com/romanvht/ByeByeDPI) or using [ByeDPI Manager](https://github.com/romanvht/ByeDPIManager)).
 
 - [zapret](https://github.com/bol-van/zapret-win-bundle?tab=readme-ov-file#quick-start)
-- [ByeDPI](byedpi-guide-windows.en.md)
+- [ByeDPI](https://github.com/hufrea/byedpi/blob/main/README.md)
 
 ### Linux
 
@@ -71,7 +69,7 @@ weight: 8
 - [zapret](https://github.com/bol-van/zapret/blob/master/docs/readme.en.md#desktop-linux-system)
 - [ByeDPI](https://github.com/hufrea/byedpi/tree/main/dist/linux)
 
-### On Router
+### On Router {#other-router}
 
 #### OpenWrt
 
@@ -95,10 +93,10 @@ weight: 8
 - [ByeDPI article with instructions](https://habr.com/ru/articles/838452/)
 - [Containers](https://hub.docker.com/u/wiktorbgu) with tpws from zapret and ByeDPI (note: tpws does not support UDP)
 
-### On a Home Server (always-on device)
+### On a Home Server (always-on device) {#other-home-server}
 
 - You can connect to ByeDPI deployed on your PC
-- [Can connect](features.en.md#distribute) to a phone running ByeByeDPI
+- [Can connect](/en/docs/routing/#distribute) to a phone running ByeByeDPI
 - [ByeDPI on single-board computers](https://habr.com/ru/articles/870254/)
 - [youtubeUnblock on single-board computers](https://habr.com/ru/articles/871460/)
 - [zapret in container](https://github.com/vernette/ss-zapret) with Shadowsocks and SOCKS5
@@ -176,7 +174,7 @@ chmod +x ciadpi
 
 > [!WARNING]
 > Do **not** include square brackets `[]` in the command.
-> If the default strategy doesn't work, try others from the [list](ALL.TXT).
+> If the default strategy doesn't work, try others from the [list](/downloads/ALL.TXT).
 
 ```
 ./ciadpi [strategy_used_on_your_phone_in_the_ByeByeDPI_app]
@@ -279,22 +277,9 @@ On iOS, there is [Rumble](https://iklassika.ru/app.php?id=5833) — apparently, 
 ### Other options for iOS users:
 
 - Use a VPN — simple and requires no technical knowledge.
-- Share access from an Android device running ByeByeDPI. See [this guide](features.en.md#sharing-internet-with-byebyedpi-local-proxy) for details.
+- Share access from an Android device running ByeByeDPI. See [this guide](/en/docs/routing/#distribute) for details.
 - Use [router-based DPI bypass methods](#other-router)
 - Use [home server solutions](#other-home-server) (e.g. a PC running ByeDPI).
 
 > [!NOTE]
 > If your ISP provides a static (white) IP, you can set up a VPN tunnel to your router and access the internet from your phone through the bypass-enabled network.
-
-## “Standard Editor” - Is It Necessary
-
-Creating a custom strategy (which is what the graphical editor is for) requires a solid understanding of how networks work and how each setting affects DPI bypass.  
-This is all thoroughly explained in the [official documentation](https://github.com/hufrea/byedpi).
-
-Anyone who has read and understood the documentation will not need the graphical editor — it only exposes a limited set of options and hides many arguments.
-
-The “standard editor” is **not recommended**. Random guessing is a bad approach.
-
-## Universal Strategy
-
-If you're struggling to get things working, just use a VPN.

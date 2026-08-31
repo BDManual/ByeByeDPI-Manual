@@ -33,7 +33,7 @@ html.dark .hextra-nav-container {
 }
 
 @media (min-width: 768px) {
-  .hextra-nav-container a[href*="docs/"] {
+  .hextra-nav-container > .hextra-max-navbar-width > a[href*="docs/"] {
     display: none;
   }
 }

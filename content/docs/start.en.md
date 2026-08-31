@@ -13,7 +13,7 @@ The app requires **Android 6** or newer.
 It works **only** on Android devices, Android TV, and some firmware based on Android.
 
 **There is no version** for iOS, TizenOS, WebOS, Windows, macOS, Linux, FreeBSD, etc.  
-If you have a system that is not suitable for installing ByeByeDPI and you don’t want to use a VPN or proxy for some reason, consider the other options in the [Others](/docs/05-others/#other-options) (section (this section also contains an option to install zapret as a Magisk module).
+If your system cannot run ByeByeDPI and you do not want to use a VPN or proxy, consider the [alternatives](/en/docs/alternatives/). This page also lists zapret modules for Magisk.
 
 > [!IMPORTANT]
 > The app is **not a VPN**!
@@ -41,30 +41,11 @@ Since ByeByeDPI operates differently from VPNs, the application **requires some 
 
 ### Before adjusting the settings
 
-ISPs may [hijack DNS](https://en.wikipedia.org/wiki/DNS_hijacking) requests, so you need to configure DNS request encryption on your system. Starting with version 9, Android supports only [DNS over TLS](https://en.wikipedia.org/wiki/DNS_over_TLS) (DoT) at the system level. at the system level. To use DNS over HTTPS (DoH), DNS over Quic (DoQ), or other methods, third-party solutions are required.
+Check DNS before testing strategies. DNS hijacking or an unstable resolver can prevent websites from opening and distort test results.
 
-> [!TIP]
-> It’s recommended to test DNS using tools like _DNS Jumper_ and _GRC's DNS Benchmark_.
+Regular and proxying resolvers, DoT/DoH setup, system mode, and troubleshooting are described on the [DNS](/en/docs/dns/) page.
 
-> [!NOTE]
-> Be cautious when choosing a DNS, as some DNS services may block access to websites considered to contain ads or adult content.
-
-Proven DNS over TLS:
-
-- `dns.google`
-- `unfiltered.adguard-dns.com`
-- `dot.sb`
-- more DoT [here](https://dnsprivacy.org/public_resolvers/#dns-over-tls-dot) and [here](https://adguard-dns.io/kb/general/dns-providers/)
-
-To configure a private DNS in your system:
-
-<img src="/images/dns-1.jpg" width="200">
-
-<img src="/images/dns-2.jpg" width="200">
-
-DNS over HTTPS services can be found [here](https://github.com/curl/curl/wiki/DNS-over-HTTPS) or [here](https://dnscrypt.info/public-servers/). However, be aware that DoH is not supported at the Android system level.
-
-### Adjusting the settings
+### Adjusting the settings {#adjusting-the-settings}
 
 Proper settings are required for ByeByeDPI to work effectively:
 
@@ -109,7 +90,7 @@ Proper settings are required for ByeByeDPI to work effectively:
 
    <img src="/images/settings-10.jpg" width="200">
 
-- Wait for the selection to complete. If successful, a list called ‘Commands with more than 50% success probability’[^2]. If the test fails, the solution can be found [here](problems.en.md#crash-proxy-test).
+- Wait for the selection to complete. If successful, a list called ‘Commands with more than 50% success probability’[^2]. If the test fails, the solution can be found [here](/en/docs/problems/#crash-proxy-test).
 
    <img src="/images/settings-20.jpg" width="200">
 
@@ -118,7 +99,7 @@ Proper settings are required for ByeByeDPI to work effectively:
    <img src="/images/settings-13.jpg" width="200">
 
 - Return to the main settings in ByeByeDPI.
-- Under **Application Filter**, select **White List** mode([more about lists](features.en.md#whitelist-blacklist))
+- Under **Application Filter**, select **White List** mode([more about lists](/en/docs/strategies/#whitelist-blacklist))
 
    <img src="/images/settings-18.jpg" width="200">
 
@@ -147,8 +128,6 @@ Proper settings are required for ByeByeDPI to work effectively:
 
 - Tap the **Connect** button again and test the application.
 - Go through the strategies in order of increasing number (or decreasing percentages) until you’re satisfied with the application’s performance.
-
----
 
 [^1]: Proxy Test is still in development. There may be errors. **Strategies are not generated automatically** — they are always the same. In the current implementation, the selection process does not actually choose anything. It merely checks the performance of a set of strategies that have been preconfigured by the developer.
 

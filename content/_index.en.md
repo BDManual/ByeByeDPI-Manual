@@ -26,12 +26,14 @@ layout: hextra-home
    Information
   </h2>
   <div class="hx:grid hx:grid-cols-1 hx:md:grid-cols-2 hx:gap-4">
-    {{< card link="/en/docs/01-start/" title="Getting started" icon="academic-cap" >}}
-    {{< card link="/en/docs/02-tv/" title="Settings for TV and TV Boxes" icon="desktop-computer" >}}
-    {{< card link="/en/docs/03-features/" title="Features" icon="star" >}}
-    {{< card link="/en/docs/04-problems/" title="Problems and solutions" icon="question-mark-circle" >}}
-    {{< card link="/en/docs/05-others/" title="Other" icon="color-swatch" >}}
-    {{< card link="/en/docs/06-extensions/" title="Advanced settings" icon="cog" >}}
+    {{< card link="/en/docs/start/" title="Getting started" icon="book-open" >}}
+    {{< card link="/en/docs/strategies/" title="Strategies and lists" icon="adjustments" >}}
+    {{< card link="/en/docs/routing/" title="Modes and routing" icon="switch-horizontal" >}}
+    {{< card link="/en/docs/problems/" title="Problems and solutions" icon="exclamation-circle" >}}
+    {{< card link="/en/docs/extensions/" title="Advanced settings" icon="puzzle" >}}
+    {{< card link="/en/docs/tv/" title="TV and set-top box settings" icon="desktop-computer" >}}
+    {{< card link="/en/docs/sbox/" title="SberBOX/SlimBox" icon="chip" >}}
+    {{< card link="/en/docs/automation/" title="Automation" icon="lightning-bolt" >}}
   </div>
 </section>
 

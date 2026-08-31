@@ -1,81 +1,10 @@
 ---
-title: Другое
-weight: 8
+title: Альтернативы
+weight: 12
 ---
 
-## Клиенты YouTube
-
-Если вас по каким-то причинам не устраивает оригинальное приложение YouTube, вот несколько альтернативных:
-
-#### Для телевизоров и приставок
-
-- [YouTube for Android TV](https://play.google.com/store/apps/details?id=com.google.android.youtube.tv) - официальное приложение YouTube для управления пультом. Требуется Android 7.0+
-- [SmartTube](https://github.com/yuliskov/SmartTube) - единственный клиент с поддержкой прокси. Требуется Android 4.3+
-- [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt) - улучшает качество просмотра YouTube за счет удаления рекламы и спонсорских вставок. Требуется Android 7.0+
-
-#### YouTube с патчами
-
-- YouTube ReVanced. [Revanced Manager](https://revanced.app/download) - приложение для удобного скачивания и обновления ReVanced и MicroG. [revanced.app](https://revanced.app/) - Официальный сайт ReVanced. Требуется Android 8.0+
-- [Morphe](https://morphe.software/) - альтернативный проект патчей ReVanced. От разработчиков, создавших модификации YouTube и YT Music. Требуется Android 9.0+
-
 > [!TIP]
-> Для установки YouTube ReVanced и Morphe рекомендуется патчить приложение самостоятельно:
-
-- [YouTube ReVanced Manager](https://github.com/ReVanced/revanced-manager)
-- [Morphe manager](https://github.com/MorpheApp/morphe-manager)
-
-#### NewPipe и его вариации
-
-- [NewPipe](https://github.com/TeamNewPipe/NewPipe/releases) - клиент для YouTube, который не использует каких-либо библиотек, зависящих от Google. Отсутствует функция авторизации в google аккаунт. Требуется Android 5.0+
-- [BravePipe](https://github.com/bravenewpipe/NewPipe) - форк NewPipe с поддержкой Sponsorblock, улучшенными фильтрами поиска и сортировки. Есть импорт подписок с помощью Google Takeout. Требуется Android 4.4+ (не проверено)
-- [PipePipe](https://github.com/InfinityLoop1308/PipePipe) - форк NewPipe с большим количеством сервисов, клиентских функций и исправлений ошибок. Требуется Android 5.0+
-- [Tubular](https://github.com/polymorphicshade/Tubular) - форк NewPipe c поддержкой Sponsorblock и ReturnYouTubeDislike. Требуется Android 5.0+
-
-#### SkyTube
-
-- [SkyTube Extra](https://github.com/SkyTubeTeam/SkyTube) - простой и функциональный проигрыватель видео с YouTube. Поддерживает официальный плеер и Chromecast. Требуется Android 4.4+
-- [SkyTube](https://github.com/SkyTubeTeam/SkyTube) - простое и функциональное свободное приложение для проигрывания видеороликов с YouTube, которое не требует Google Play Services для работы. Требуется Android 4.4+
-- [SkyTube Legacy Extra](https://github.com/SkyTubeTeam/SkyTubeLegacy) - простой и функциональный проигрыватель видео с YouTube. Поддерживает официальный плеер и Chromecast. Требуется Android 4.0+
-- [SkyTube Legacy](https://github.com/SkyTubeTeam/SkyTubeLegacy) - простое и функциональное свободное приложение для проигрывания видеороликов с YouTube, которое не требует Google Play Services для работы. Требуется Android 4.0+
-
-#### Идейные клиенты, которые выступают за приватность
-
-> [!WARNING]
-> Для работы данных приложений требуются инстансы. Они могут быть заблокированы иначе чем YouTube и требовать [разблокировки](/docs/03-features/#разблокировать-свои-ресурсы) отдельно.
-
-- [FreeTube Android](https://github.com/MarmadileManteater/FreeTubeAndroid) - клиент YouTube, использующий Invidious API для передачи данных и видео с YouTube. Требуется Android 7.0+
-- [LibreTube](https://github.com/libre-tube/LibreTube) - клиент, использующий [API Piped](https://github.com/TeamPiped/Piped) для отображения содержимого каналов и воспроизведения контента, не требует наличия учетной записи YouTube и сервисов Google.
-- [Mini YouTube](https://github.com/monobogdan/selfeco) - клиент YouTube из состава приложений SelfEco. Использует Invidous API. **Требуется Android 2.2+**. Также существует [форк](https://github.com/tinelix/selfeco-plus), с заявленной поддержкой HTTP-прокси для YouTube, однако собирать приложение нужно самостоятельно.
-- [notPipe](https://github.com/gohoski/notPipe) - рабочий клиент YouTube для **Android 1.5+**, использующий API [Invidious](https://invidious.io), [yt2009](https://github.com/ftde0/yt2009) и [YtAPILegacy](http://yt.modyleprojects.ru). Приложение использует множество инстансов для надёжности.
-
-#### Ещё варианты
-
-- [VueTube](https://github.com/pixkk/VueTube) - клиент YouTube построенный на базе Vue. Есть поддержка Sponsorblock и ReturnYouTubeDislike. Требуется Android 5.0+ (возможно не поддерживается Android 12.1+)
-- [Namida](https://github.com/namidaco/namida) - красивый и многофункциональный проигрыватель музыки и видео с поддержкой YouTube.
-- [YT PRO](https://github.com/prateek-chaubey/YTPro) - легковесный парсер/оболочка m.youtube.com с продвинутыми функциями. Требуется Android 5.0+
-- [NouTube](https://github.com/nonbili/NouTube) - YouTube и YouTube Music в одном приложении. Без рекламы, играет в фоновом режиме.
-- [pstube](https://github.com/prateekmedia/pstube) - смотрите и скачивайте видео без рекламы
-
-#### Проприетарные программы
-
-- [PureTuber](https://play.google.com/store/apps/details?id=free.tube.premium.advanced.tuber) – это клиент для YouTube, за основу которого был взят NewPipe. Новый интерфейс и добавлена возможность входа в google-аккаунт. Требуется Android 4.4+
-- [GreenTuber](https://play.google.com/store/apps/details?id=by.green.tuber&hl=en) - YouTube с блокировщиком рекламы. Требуется Android 6.0+
-
-## Проксирующие DNS
-
-> [!CAUTION]
-> Будьте осторожны при использовании различных DNS. Используйте только те DNS-сервера, в надёжности и безопасности которых вы уверены.
-
-Чтобы использовать некоторые ресурсы, которые заблокированы извне можно использовать проксирующие DNS - они скрывают ваше местоположение от некоторых ресурсов.
-
-В теории, такие DNS можно установить в ByeByeDPI в формате IPv4 и пропускать трафик к заблокированному ресурсу через ByeByeDPI, но это не сильно рационально. Лучшим вариантом будет установить DoH на уровне браузера. Не стоит использовать такие DNS для всей системы, так как, например, Comss DNS иногда не выдерживает нагрузки и отключается. Если такой DNS будет работать для всей системы - у вас пропадёт интернет.
-
-Вот к чему можно получить доступ, используя [Comss DNS](https://www.comss.ru/page.php?id=7315): вы можете пользоваться ИИ-сервисами (ChatGPT и Sora, Microsoft Copilot, GitHub Copilot, xAI Grok, Google Gemini и Claude AI), или устанавливать обновления антивирусов, инсайдерские сборки и обновления Windows, а также играть в Brawl Stars и сетевые режимы Doom Eternal в России.
-
-## Другие варианты ускорения серверов
-
-> [!TIP]
-> ByeDPI или zapret? Если вы хотите, чтобы устройства внутри локальной сети могли подключаться к вашему компьютеру - используйте ByeDPI и читайте [инструкцию](/docs/03-features/#distribute) по предоставлению доступа к ByeByeDPI - действия почти идентичные.
+> ByeDPI или zapret? Если вы хотите, чтобы устройства внутри локальной сети могли подключаться к вашему компьютеру - используйте ByeDPI и читайте [инструкцию](/docs/routing/#distribute) по предоставлению доступа к ByeByeDPI - действия почти идентичные.
 
 ### На Android
 
@@ -119,7 +48,7 @@ weight: 8
 > В ByeDPI нет подбора стратегий - найти рабочую стратегию необходимо самостоятельно (например, при помощи подбора в [ByeByeDPI](https://github.com/romanvht/ByeByeDPI) или [ByeDPI Manager](https://github.com/romanvht/ByeDPIManager)).
 
 - [zapret](https://github.com/bol-van/zapret?tab=readme-ov-file#%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9-%D1%81%D1%82%D0%B0%D1%80%D1%82)
-- [ByeDPI](byedpi-guide-windows.md)
+- [ByeDPI](https://github.com/hufrea/byedpi/blob/main/README.md)
 
 ### На Linux
 
@@ -182,7 +111,7 @@ weight: 8
 - [zapret](https://github.com/bol-van/zapret?tab=readme-ov-file#%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9-%D1%81%D1%82%D0%B0%D1%80%D1%82)
 - [ByeDPI](https://github.com/hufrea/byedpi/tree/main/dist/linux)
 
-### На роутере
+### На роутере {#other-router}
 
 #### OpenWrt
 
@@ -233,12 +162,12 @@ weight: 8
 - [Контейнер с nfqws2 из zapret2](https://hub.docker.com/r/wiktorbgu/nfqws2-mikrotik) от wiktorbgu
 - [Контейнер с b4](https://hub.docker.com/r/wiktorbgu/b4-mikrotik) от wiktorbgu
 
-### На домашнем сервере (постоянно включенном устройстве)
+### На домашнем сервере (постоянно включенном устройстве) {#other-home-server}
 
 ##### byedpi
 
 - Можно подключаться к ByeDPI, который будет развёрнут на вашем ПК
-- [Можно подключаться](/docs/03-features/#distribute) к телефону, на котором запущен ByeByeDPI
+- [Можно подключаться](/docs/routing/#distribute) к телефону, на котором запущен ByeByeDPI
 - [ByeDPI на одноплатном компьютере](https://habr.com/ru/articles/870254/)
 - [контейнер с ByeDPI](https://github.com/hufrea/byedpi/tree/main/dist/docker) (официальный)
 - [контейнер с ByeDPI](https://hub.docker.com/r/tazihad/byedpi) (неофициальный) от tazihad
@@ -327,7 +256,7 @@ chmod +x ciadpi
 - Запустите
 
 > [!WARNING]
-> Аргументы указываются без квадратных скобок. Если стратегия по умолчанию не работает — перебирайте другие из [списка](ALL.TXT)
+> Аргументы указываются без квадратных скобок. Если стратегия по умолчанию не работает — перебирайте другие из [списка](/downloads/ALL.TXT)
 
 ```
 ./ciadpi [стратегия, которая работает на телефоне в приложении ByeByeDPI в вашей сети]
@@ -424,16 +353,6 @@ rm ~/Library/LaunchAgents/com.user.ciadpi.plist
 Другие варианты для пользователей iOS:
 
 - Использовать VPN. Не требует особых навыков, усилий и знаний
-- Раздать доступ к ByeByeDPI с Android-устройства. Данный вариант подойдёт, если есть устройство на Android с настроенным ByeByeDPI. Подробная инструкция [здесь](/docs/03-features/#раздача-интернета-с-byebyedpi-локальный-прокси)
+- Раздать доступ к ByeByeDPI с Android-устройства. Данный вариант подойдёт, если есть устройство на Android с настроенным ByeByeDPI. Подробная инструкция [здесь](/docs/routing/#distribute)
 - Использовать решения по [обходу DPI на роутере](#other-router)
 - Использовать решения по [обходу DPI на домашнем сервере](#other-home-server) (в качестве сервера может выступать ПК)
-
-## "Стандартный редактор" - нужен ли?
-
-Чтобы разрабатывать стратегию (а настройки в графическом редакторе это и есть данный процесс), необходимо разбираться в работе сетей и понимать за что отвечает каждый пункт настроек досконально изучив [документацию](https://github.com/hufrea/byedpi). Тем, кто изучил документацию, не нужен графический редактор, потому что он не отображает всех аргументов, а делает это лишь частично.
-
-"Стандартный редактор" **не нужен**. Тыкать наугад - плохая тактика.
-
-## Универсальная стратегия
-
-Если вам показалась сложной настройка или у вас ничего не работает - используйте VPN. Или смотрите VK Видео и Rutube - это отличные платформы.

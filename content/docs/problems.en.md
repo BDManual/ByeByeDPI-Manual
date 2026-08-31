@@ -1,7 +1,15 @@
 ---
 title: Problems and Solutions
-weight: 4
+weight: 6
 ---
+
+## Recently everything worked, but now it doesn't {#not-working-now}
+
+First, try changing DNS in ByeByeDPI or in the system settings. If working DoT or DoH is already configured in the system, select system DNS in ByeByeDPI. More options are described on the [DNS](/en/docs/dns/) page.
+
+Then clear ByeByeDPI data and reboot the device. If the problem occurs only in a specific application, such as YouTube, clear its data and update the client to the latest version.
+
+If nothing changes, run [strategy selection again](/en/docs/start/#adjusting-the-settings). If the website opens in a browser added to the [whitelist](/en/docs/strategies/#whitelist-blacklist), the issue is most likely with the application client rather than the ByeByeDPI strategy.
 
 ## Proxy selection crashes {#crash-proxy-test}
 
@@ -45,16 +53,32 @@ Make sure no app is set to "Always on".
 
 ## Works only on Wi-Fi or only on mobile internet, or only with one provider {#only-one-case}
 
-Each network needs its own strategy. When connecting to a different network, you need to find the appropriate command-line arguments, i.e., perform [re-selection](01-docs/01-start/). Once the working strategy for the new network is found - you can pin it and sign it for the network this strategy applies to.
+Each network needs its own strategy. When connecting to a different network, perform [strategy selection again](/en/docs/start/#adjusting-the-settings). Once a working strategy is found, pin it and label it for the corresponding network.
 
 Also try disabling [network acceleration](#simultaneously-wi-fi-mobile-web) in Wi-Fi settings.
 
 ## An app or website doesn't work when ByeByeDPI is running {#something-is-not-working}
 
-If a specific app doesn't work, like Telegram - use [lists](/docs/03-features/).
+If an app works without ByeByeDPI but stops working after it is enabled, use the [application whitelist or blacklist](/en/docs/strategies/#whitelist-blacklist) so that an unsuitable strategy does not process its traffic.
 
-If some websites don't work, like `kremlin.ru` - use two browsers: add one to the [whitelist](/docs/03-features/) (where ByeByeDPI will work), and don't add the other one (where ByeByeDPI won't work).
-If you don't like the two-browser option, use [per-site routing methods](/docs/03-features/).
+If some websites don't work, like `kremlin.ru` - use two browsers: add one to the [whitelist](/en/docs/strategies/#whitelist-blacklist) (where ByeByeDPI will work), and don't add the other one (where ByeByeDPI won't work).
+If you don't like the two-browser option, use [per-site routing methods](/en/docs/routing/#split-routing).
+
+## Telegram or WhatsApp does not work
+
+For some users, Telegram and WhatsApp are blocked by IP address. ByeByeDPI cannot bypass this type of blocking, so selecting ByeByeDPI strategies or domain lists is not a solution.
+
+If the app works without ByeByeDPI but fails only after it is enabled, exclude its traffic using the [application whitelist or blacklist](/en/docs/strategies/#whitelist-blacklist).
+
+As a separate option for Telegram, with no guarantee that it will work, you can try this [solution from the discussion](https://t.me/byebyedpi_group/1434765/1479012).
+
+## Can ByeByeDPI bypass an allowlist
+
+No. With this type of blocking, access remains available only to a small list of approved websites and IP addresses. Traffic cannot reach other addresses, so ByeByeDPI cannot help.
+
+A VPN or proxy works only if its server remains reachable. If a connection to that server cannot be established, changing SNI or a ByeByeDPI strategy will not help.
+
+The implementation may vary between networks and regions, but trying different ByeByeDPI strategies is not a way to bypass an allowlist.
 
 ## Doesn't work with SmartTube {#smarttube}
 
@@ -62,23 +86,16 @@ If you don't like the two-browser option, use [per-site routing methods](/docs/0
 > If Android version is 9 or lower, you probably won't be able to set up SmartTube to work correctly with ByeByeDPI.
 
 If your device has Android 10 or newer, update SmartTube to the latest version, try different network engines in SmartTube settings, try configuring SmartTube in proxy mode according to [this instruction](#no-vpn).
-If none of these actions helped: try rebooting the device and performing [strategy selection](01-docs/01-start/) again.
+If none of these actions helped, reboot the device and perform [strategy selection](/en/docs/start/#adjusting-the-settings) again.
 
 ### Error 403
 
 This error is related exclusively to SmartTube's operation. Users [complained](https://github.com/yuliskov/SmartTube/issues/3606) about this problem a long time ago. Updating or reinstalling SmartTube might help.
 
-## Recently everything worked, but now it doesn't {#not-working-now}
-
-Try clearing ByeByeDPI data, rebooting your phone.
-If that doesn't help: try clearing YouTube app data and updating the YouTube client to the latest version.
-If still not working - try performing [selection again](01-docs/01-start/).
-If the problem persists - add a browser to the [whitelist](/docs/03-features/) and open YouTube there. If it works - the problem is with the YouTube client.
-
 ## Internet disappears on TV when ByeByeDPI starts {#internet-is-lost}
 
-Use the [whitelist](/docs/03-features/) or [per-site routing](/docs/03-features/). But first check that the TV box has internet at all (Wi-Fi or Ethernet cable connected).
-If Android version is higher than 9 - you can configure SmartTube and ByeByeDPI in [proxy mode](/docs/03-features/).
+Use the [whitelist](/en/docs/strategies/#whitelist-blacklist) or [per-site routing](/en/docs/routing/#split-routing). But first check that the TV box has internet at all (Wi-Fi or Ethernet cable connected).
+If Android version is higher than 9 - you can configure SmartTube and ByeByeDPI in [proxy mode](/en/docs/routing/#vpn-proxy-modes).
 
 ## No audio in Discord {#ds-no-voice}
 
@@ -95,7 +112,7 @@ dis.gd
 discordcdn.com
 ```
 
-Instructions for selecting your own domains are [here](/docs/03-features/).
+Instructions for selecting your own domains are [here](/en/docs/strategies/#unlock-more-services).
 In **selection settings** enable **extended log**:
 
 <img src="/images/image-14.png" width="200" alt="Extended log option">
@@ -127,7 +144,7 @@ Check in the selection settings the number of requests to the domain: should be 
 
    <img src="/images/image-5.png" width="200" alt="Start selection button">
 
-Try adding a browser to the [whitelist](/docs/03-features/) and opening YouTube there. If it works - the problem is with the YouTube client.
+Try adding a browser to the [whitelist](/en/docs/strategies/#whitelist-blacklist) and opening YouTube there. If it works - the problem is with the YouTube client.
 Try using YouTube Revanced Extended with QUIC disabled:
 Settings → Extended → Other → disable quic.
 
@@ -162,7 +179,7 @@ If the SmartTube method didn't work for some reason:
 Address: 127.0.0.1  
 Port: 1080
 ```
-- Download `Firefox`, install the `ZeroOmega--Proxy SwitchyOmega V3` extension and follow [the instructions](/docs/03-features/). To make watching YouTube more comfortable, you can download the `SponsorBlock` extension.
+- Download `Firefox`, install the `ZeroOmega--Proxy SwitchyOmega V3` extension and follow [the instructions](/en/docs/routing/#extension). To make watching YouTube more comfortable, you can download the `SponsorBlock` extension.
 
 ## Very low percentages (above zero) {#low-interest-rates}
 
@@ -172,7 +189,7 @@ There's a chance DNS is being hijacked. Specify your own DoT (DNS-over-TLS) in t
 
 <img src="/images/Pasted image 20250305220209.png" width="200" alt="DoT settings 2">
 
-Reboot your device and perform [selection again](01-docs/01-start/).
+Reboot your device and perform [strategy selection again](/en/docs/start/#adjusting-the-settings).
 
 Verified DoT can be found [here](https://dnsprivacy.org/public_resolvers/).
 
@@ -208,7 +225,7 @@ ByeByeDPI is not a VPN, but when using it, unlimited YouTube traffic gets spent.
 
 Don't expect tech support to tell you that you can pay for unlimited YouTube use with a VPN - it won't work. Since ByeByeDPI is not a VPN. Even with unlimited VPN, when using ByeByeDPI, traffic will be spent.
 
-For DPI, traffic from ByeByeDPI in VPN mode and Proxy mode is no different (if you want to know why: read about proxy and VPN modes in ByeByeDPI in the "Features" section).
+For DPI, traffic from ByeByeDPI in VPN mode and Proxy mode is no different. Read more in [Modes and routing](/en/docs/routing/#vpn-proxy-modes).
 
 ## Percentages are not displayed {#invisible-percentage}
 
@@ -230,11 +247,11 @@ If Android version is less than 6.0, nothing can be done about this error. If An
 
 ## No YouTube tiles on TV home screen {#no-tiles-on-tv}
 
-Try adding the Home app or another app responsible for the **home screen** to the [whitelist](/docs/03-features/).
+Try adding the Home app or another app responsible for the **home screen** to the [whitelist](/en/docs/strategies/#whitelist-blacklist).
 
-## DoT / DoH / DNS in IPv6 format doesn't work in ByeByeDPI {#only-dns-ipv4}
+## DoT or DoH doesn't work in ByeByeDPI {#only-dns-ipv4}
 
-If you tried to enter DNS in non-IPv4 format in the DNS field, ByeByeDPI won't work with them. To fix this, just leave the DNS field empty. Note that when performing selection, the system DNS is used regardless of what you specified in the DNS field in ByeByeDPI.
+DoT and DoH cannot be entered directly in the application's DNS field. Configure them at the system level, then select system DNS in ByeByeDPI or leave the DNS field empty. Strategy testing uses system DNS regardless of the value in this field.
 
 ## Doesn't work on Yandex TV running YaOS {#yaos}
 
@@ -244,7 +261,7 @@ You can also try alternative client [TizenTube Cobalt](https://github.com/reisxd
 
 ## Doesn't work on TV at all / Can't install app due to WebOS/Tizen {#not-working-tv}
 
-If you tried all [clients](#clients) and YouTube doesn't work in browser and in [proxy](#no-vpn) mode with extension connected - the problem is in the firmware (either DNS requests are redirected incorrectly, or the app can't be installed at all). The only solution is to configure the bypass on the [router](#other-router) or [set up bypass on PC](#smarttv) and use it as a gateway for TV traffic.
+If you tried all [clients](/en/docs/youtube-clients/) and YouTube does not work in a browser or in [proxy](#no-vpn) mode with the extension enabled, the problem is in the firmware. Configure the bypass on a [router](/en/docs/alternatives/#other-router) or [set it up on a PC](https://github.com/BDManual/ByeDPIManager-Manual/blob/main/smarttv.md) and use the PC as a gateway for TV traffic.
 
 ## Failed to start VPN {#unable-to-start}
 
@@ -256,4 +273,4 @@ Check that the strategy is written correctly. If you can't - use a different str
 
 Check if YouTube works in the browser, after adding the browser to the whitelist first. If it works - install the latest version of the official [YouTube](https://www.apkmirror.com/apk/google-inc/youtube-for-android-tv-android-tv/) client.
 
-If the problem persists - there's a chance that special [configuration](sbox.md) of the TV is required.
+If the problem persists - there's a chance that special [configuration](/en/docs/sbox/) of the TV is required.

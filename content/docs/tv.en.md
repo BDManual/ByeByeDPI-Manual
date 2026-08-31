@@ -1,10 +1,10 @@
 ---
 title: TV Settings
-weight: 6
+weight: 8
 ---
 
 > [!WARNING]
-> Before reading this section, you need to configure the application according to the standard [instructions](/docs/01-start/).
+> Before reading this section, you need to configure the application according to the standard [instructions](/en/docs/start/).
 
 ## Sending ByeByeDPI to TV
 
@@ -15,7 +15,7 @@ To easily send ByeByeDPI to your device, you can use the `Send Files To TV` app 
 When setting up ByeByeDPI on a device controlled by a remote, you may ask:
 Can I transfer ByeByeDPI settings from a phone where the program **was already configured in this local network**?
 
-The easiest way is to use the built-in [export and import](/docs/03-features/#export-import) feature.
+The easiest way is to use the built-in [export and import](/en/docs/strategies/#export-import) feature.
 However, on some firmware, importing may not work: in this case, you can use an air mouse for more comfortable interaction with the application (e.g., copying and pasting command-line arguments).
 If you don't have a remote with an air mouse function - you can use the `Zank Remote` or `Serverless Bluetooth Keyboard & Mouse` applications.
 
@@ -23,7 +23,7 @@ Applications that may be useful for transferring settings: `Android TV ADB Mouse
 
 ## Autostart
 
-Automatically runs ByeByeDPI **_when the device boots_**. This function should only be used in **[whitelist mode](/docs/03-features/#whitelist-blacklist)**.
+Automatically runs ByeByeDPI **_when the device boots_**. This function should only be used in **[whitelist mode](/en/docs/strategies/#whitelist-blacklist)**.
 
 <img src="/images/Pasted image 20250301223254.png" width="200">
 
@@ -35,7 +35,7 @@ Automatically runs ByeByeDPI when opening the application (ByeByeDPI itself).
 
 ## SberBOX/SlimBox setup
 
-Instructions [here](/docs/07-sbox/)
+Instructions [here](/en/docs/sbox/)
 
 ## TCL setup
 
@@ -49,4 +49,4 @@ If you have a TCL TV and an error appears when running VPN:
 ```
 -i 127.0.0.1 -p 1080 (rest of the arguments)
 ```
-- Try to connect, if it doesn't work, use [this solution](/docs/04-problems/#no-vpn) for devices with VPN restrictions
+- Try to connect, if it doesn't work, use [this solution](/en/docs/problems/#no-vpn) for devices with VPN restrictions

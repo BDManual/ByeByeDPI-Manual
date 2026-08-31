@@ -1,6 +1,6 @@
 ---
 title: SberBOX/SlimBox
-weight: 7
+weight: 9
 ---
 
 ## Device identification
@@ -25,6 +25,9 @@ weight: 7
 
 ## Setup instructions
 
+> [!NOTE]
+> On recent firmware versions, the required permissions are usually already granted. Install and start ByeByeDPI first. Use the ADB steps below only if the app cannot start the VPN or reports missing permissions.
+
 ### Android 13 instructions
 
 > ⚠️ These devices only support connection via computer
@@ -40,7 +43,7 @@ weight: 7
 
 #### Connecting via ADB AppControl
 
-- Install [ADB AppControl](https://adbappcontrol.com/ru/#download) on your computer
+- Install [ADB AppControl](https://adbappcontrol.com/ru/pc/) on your computer
 - Enter the *IP address* and *port* from the device settings
 - Click the **Wi-Fi** icon to connect
 - In the **Console** tab, execute commands:
@@ -63,7 +66,7 @@ shell appops set io.github.romanvht.byedpi ACTIVATE_VPN allow
 
 #### 2A. Via ADB TV (easy way)
 
-- Install [ADB TV](https://adbappcontrol.com/tv/download/?r=latest&lang=ru)
+- Install [ADB TV](https://adb.cybercat.dev/en/tv/)
 - In the **Console** tab execute:
 
 ```
@@ -74,7 +77,7 @@ appops set io.github.romanvht.byedpi ACTIVATE_VPN allow
 
 #### 2B. Via computer
 
-- Install [ADB AppControl](https://adbappcontrol.com/ru/#download)
+- Install [ADB AppControl](https://adbappcontrol.com/ru/pc/)
 - Enter the device's *IP address* and *port* 5555
 - In the **Console** tab execute:
 

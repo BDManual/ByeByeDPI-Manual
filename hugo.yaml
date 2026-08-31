@@ -41,20 +41,28 @@ menu:
   main:
     - pageRef: /docs/download
       weight: 1
-    - pageRef: /docs/01-start
+    - pageRef: /docs/start
       weight: 2
-    - pageRef: /docs/03-features
+    - pageRef: /docs/dns
       weight: 3
-    - pageRef: /docs/04-problems
+    - pageRef: /docs/strategies
       weight: 4
-    - pageRef: /docs/06-extensions
+    - pageRef: /docs/routing
       weight: 5
-    - pageRef: /docs/02-tv
+    - pageRef: /docs/problems
       weight: 6
-    - pageRef: /docs/07-sbox
+    - pageRef: /docs/extensions
       weight: 7
-    - pageRef: /docs/05-others
+    - pageRef: /docs/tv
       weight: 8
+    - pageRef: /docs/sbox
+      weight: 9
+    - pageRef: /docs/youtube-clients
+      weight: 10
+    - pageRef: /docs/automation
+      weight: 11
+    - pageRef: /docs/alternatives
+      weight: 12
     - name: Поиск
       weight: 1
       params:
