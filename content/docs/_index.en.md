@@ -1,6 +1,5 @@
 ---
 title: "Docs"
-aliases:
-  - /en/docs/
-url: /en/docs/
+build:
+  render: link
 ---

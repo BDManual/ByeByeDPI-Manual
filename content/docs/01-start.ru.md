@@ -1,6 +1,8 @@
 ---
 title: Начало
 weight: 2
+aliases:
+  - /docs/
 ---
 
 ## Что такое ByeByeDPI?

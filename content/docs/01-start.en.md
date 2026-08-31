@@ -1,6 +1,8 @@
 ---
 title: Start
 weight: 2
+aliases:
+  - /docs/
 ---
 
 ## What is a ByeByeDPI?

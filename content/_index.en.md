@@ -34,3 +34,13 @@ layout: hextra-home
     {{< card link="/en/docs/06-extensions/" title="Advanced settings" icon="cog" >}}
   </div>
 </section>
+
+<section class="hx:w-full hx:mt-6 hx:mb-6 hx:text-center">
+  <h2 class="hx:text-2xl sm:hx:text-3xl md:hx:text-4xl hx:font-bold hx:mb-8 hx:text-center">
+    Other
+  </h2>
+  <div class="hx:grid hx:grid-cols-1 hx:md:grid-cols-2 hx:gap-4">
+    {{< card link="/en/donate/" title="Support the project" icon="heart" >}}
+    {{< card link="https://github.com/romanvht/ByeByeDPI" title="ByeByeDPI on GitHub" icon="github" >}}
+  </div>
+</section>

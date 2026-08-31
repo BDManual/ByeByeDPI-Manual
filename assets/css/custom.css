@@ -32,9 +32,19 @@ html.dark .hextra-nav-container {
   background-color: #083762;
 }
 
+@media (min-width: 768px) {
+  .hextra-nav-container a[href*="docs/"] {
+    display: none;
+  }
+}
+
 html.dark aside {
   background-color: #102438;
   border-right: 1px solid #1A3A55;
+}
+
+.hextra-toc:empty {
+  display: none;
 }
 
 /* title main */
@@ -102,7 +112,7 @@ html.dark .hextra-card:hover {
 
 /* sidebar normalize */
 html:not(.dark) .hextra-toc div {
-  background: none;
+  background: #E8F1FA;
   box-shadow: none;
 }
 
@@ -112,7 +122,7 @@ html:not(.dark) .hextra-sidebar-container div {
 }
 
 html.dark .hextra-toc div {
-  background: none;
+  background: #0D1E2E;
   box-shadow: none;
 }
 

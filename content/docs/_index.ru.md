@@ -1,6 +1,5 @@
 ---
 title: "Документация"
-aliases:
-  - /docs/
-url: /docs/
+build:
+  render: link
 ---
