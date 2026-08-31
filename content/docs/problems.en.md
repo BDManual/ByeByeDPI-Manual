@@ -68,9 +68,9 @@ If you don't like the two-browser option, use [per-site routing methods](/en/doc
 
 For some users, Telegram and WhatsApp are blocked by IP address. ByeByeDPI cannot bypass this type of blocking, so selecting ByeByeDPI strategies or domain lists is not a solution.
 
-If the app works without ByeByeDPI but fails only after it is enabled, exclude its traffic using the [application whitelist or blacklist](/en/docs/strategies/#whitelist-blacklist).
+As a separate option for Telegram, you can try this [solution from the discussion](https://t.me/byebyedpi_group/1434765/1479012).
 
-As a separate option for Telegram, with no guarantee that it will work, you can try this [solution from the discussion](https://t.me/byebyedpi_group/1434765/1479012).
+If the app works without ByeByeDPI but fails only after it is enabled, exclude its traffic using the [application whitelist or blacklist](/en/docs/strategies/#whitelist-blacklist).
 
 ## Can ByeByeDPI bypass an allowlist
 
